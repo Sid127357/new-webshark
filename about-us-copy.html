@@ -62,10 +62,18 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Blog</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
           </ul>
+        </div>
+        <div class="cta_btn">
+          <a
+            data-marquee-text="START A PROJECT"
+            class="marquee-button"
+            href="https://www.spinxdigital.com/start-a-project/"
+          >
+            <span role="presentation" class="label">START A PROJECT</span>
+            <span class="visually-hidden">START A PROJECT</span>
+            <span class="bg"></span>
+          </a>
         </div>
       </div>
     </nav>
@@ -2171,44 +2179,44 @@
     <!-- Initialize Swiper -->
     <script>
       // Testimonial slider 1
-      var smoothSwiper = new Swiper(".mySwiper", {
-        speed: 12000,
-        spaceBetween: 30,
-        direction: "horizontal",
-        zoom: true,
-        autoplay: {
-          delay: 0,
-        },
-        loop: true,
+      var swiper = new Swiper(".mySwiper", {
         slidesPerView: 3.5,
+        spaceBetween: 30,
+        grabCursor: true,
         freeMode: true,
+        speed: 10000,
+        loop: true,
+        autoplay: {
+          delay: 0.5,
+          disableOnInteraction: false,
+        },
       });
       // Testimonial slider 2
-      var swiper2 = new Swiper(".mySwiper2", {
+      var swiper = new Swiper(".mySwiper2", {
         slidesPerView: 3.5,
         spaceBetween: 30,
+        grabCursor: true,
+        freeMode: true,
         speed: 10000,
-        direction: "horizontal",
-        zoom: true,
+        loop: true,
         autoplay: {
-          delay: 0,
+          delay: 0.5,
+          disableOnInteraction: false,
           reverseDirection: true,
         },
-        loop: true,
-        freeMode: true,
       });
       // Get In touch slider
-      var smoothSwiper = new Swiper(".mySwiper3", {
-        slidesPerView: 2.4,
-        spaceBetween: 10,
-        speed: 10000,
-        direction: "horizontal",
-        zoom: true,
-        autoplay: {
-          delay: 0,
-        },
-        loop: true,
+      var swiper = new Swiper(".mySwiper3", {
+        slidesPerView: 3.5,
+        spaceBetween: 30,
+        grabCursor: true,
         freeMode: true,
+        speed: 10000,
+        loop: true,
+        autoplay: {
+          delay: 0.5,
+          disableOnInteraction: false,
+        },
       });
     </script>
   </body>
