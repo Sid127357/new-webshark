@@ -1952,4 +1952,32 @@ position: absolute;
 .testimonial-slider .testimonial-marquee-item.top-margin{margin-top: 40px;}
 .testimonial-slider  .mySwiper{margin-bottom: 50px;}
 
+.get-in-touch{grid-column-gap: 50px;grid-row-gap: 50px;border-top: 1px solid #eeeeee57;border-bottom: 1px solid #eeeeee57;align-items: center;padding-top: 50px;padding-bottom: 50px;display: flex;overflow: hidden;}
+.marquee-title {
+  margin-bottom: 0;
+  font-size: 40px;
+  white-space: nowrap;
+}
+
+.marquee-arrow-wrap {
+  width: 75px;
+  height: 75px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
+.marquee-arrow-icon {
+  height: 30px;
+  filter: brightness(0%);
+}
+.footer-marquee-item{
+ gap:50px;
+ align-items: center;
+ text-decoration: none;
+ display: flex;
+ color: #fff !important;
+ justify-content: space-around;
+}
 

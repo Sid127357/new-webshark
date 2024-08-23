@@ -1143,7 +1143,64 @@
             </div>
           </section>
           <!-- Get in Touch Section -->
-           <!-- Get In Touch Section -->
+          <section class="get-in-touch">
+            <div class="swiper mySwiper3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="footer-marquee-item">
+                    <h6 class="marquee-title">Reach Us Here</h6>
+                    <div class="marquee-arrow-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6513d0ff3764e81eba5ce6ae_arrow-01.svg"
+                        loading="lazy"
+                        alt=""
+                        class="marquee-arrow-icon"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="footer-marquee-item">
+                    <h6 class="marquee-title">Get In Touch</h6>
+                    <div class="marquee-arrow-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6513d0ff3764e81eba5ce6ae_arrow-01.svg"
+                        loading="lazy"
+                        alt=""
+                        class="marquee-arrow-icon"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="footer-marquee-item">
+                    <h6 class="marquee-title">Ask A Question</h6>
+                    <div class="marquee-arrow-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6513d0ff3764e81eba5ce6ae_arrow-01.svg"
+                        loading="lazy"
+                        alt=""
+                        class="marquee-arrow-icon"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="footer-marquee-item">
+                    <h6 class="marquee-title">Talk To Us</h6>
+                    <div class="marquee-arrow-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6513d0ff3764e81eba5ce6ae_arrow-01.svg"
+                        loading="lazy"
+                        alt=""
+                        class="marquee-arrow-icon"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
           <!-- Footer -->
           <footer id="tw-footer" class="tw-footer footer-top-space">
             <div class="footer-top">
@@ -2114,16 +2171,15 @@
     <!-- Initialize Swiper -->
     <script>
       var smoothSwiper = new Swiper(".mySwiper", {
-        slidesPerView: 3.5,
+        speed: 12000,
         spaceBetween: 30,
-        speed: 10000,
         direction: "horizontal",
         zoom: true,
         autoplay: {
           delay: 0,
         },
         loop: true,
-        slidesPerView: 3,
+        slidesPerView: 3.5,
         freeMode: true,
       });
       var swiper2 = new Swiper(".mySwiper2", {
@@ -2134,7 +2190,20 @@
         zoom: true,
         autoplay: {
           delay: 0,
-          reverseDirection:true
+          reverseDirection: true,
+        },
+        loop: true,
+        freeMode: true,
+      });
+      // Get In touch slider
+      var smoothSwiper = new Swiper(".mySwiper3", {
+        slidesPerView: 3.5,
+        spaceBetween: 30,
+        speed: 10000,
+        direction: "horizontal",
+        zoom: true,
+        autoplay: {
+          delay: 0,
         },
         loop: true,
         slidesPerView: 3,
