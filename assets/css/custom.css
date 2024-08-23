@@ -1957,15 +1957,16 @@ position: absolute;
 .get-in-touch .marquee-arrow-icon {height: 30px;filter: brightness(0%);}
 .get-in-touch .footer-marquee-item{gap:50px;align-items: center;text-decoration: none;display: flex;color: #fff !important;justify-content: space-evenly;}
 
-.cta_btn .marquee-button {-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;border-radius:0;cursor:pointer;display:inline-block;height:48px;text-align:center;background-color:#3f92cf;overflow:hidden;padding:0;position:relative;text-decoration:none;-webkit-transition:all .6s ease;-moz-transition:all .6s ease;-ms-transition:all .6s ease;-o-transition:all .6s ease;transition:all .6s ease;z-index:1;z-index:1;width:200px;letter-spacing:1.5px;color:#16171a;font-weight:500;font-size:14px;line-height:20px;margin-left:60px;text-transform:uppercase;}
+.cta_btn .marquee-button {-webkit-appearance:none;-moz-appearance:none;appearance:none;border:0;border-radius:0;cursor:pointer;display:inline-block;height:48px;text-align:center;background-color:#3f92cf;overflow:hidden;color:#fff;padding:0;position:relative;text-decoration:none;-webkit-transition:all .6s ease;-moz-transition:all .6s ease;-ms-transition:all .6s ease;-o-transition:all .6s ease;transition:all .6s ease;z-index:1;z-index:1;width:200px;letter-spacing:1.5px;color:#16171a;font-weight:500;font-size:14px;line-height:20px;margin-left:60px;text-transform:uppercase;}
 @media (max-width:991.98px) {.marquee-button {margin-left:22px;}}
 .marquee-button:after,
-.marquee-button:before {-webkit-animation:marquee 6s linear infinite;animation:marquee 6s linear infinite;color:#16171a;content:attr(data-marquee-text);line-height:48px;position:absolute;top:0;width:100%;will-change:transform;z-index:2;background:url("https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-b4bc015/www.spinxdigital.com/app/themes/spinxdigital/assets/images/icon-email.svg") no-repeat 0;padding-left:5px;font-weight:500;background-size:18px;height:48px;font-family:"Inter Medium",sans-serif;}
+.marquee-button:before {filter: brightness(100);-webkit-animation:marquee 6s linear infinite;animation:marquee 6s linear infinite;content:attr(data-marquee-text);line-height:48px;position:absolute;top:0;width:100%;will-change:transform;z-index:2;background:url("https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-b4bc015/www.spinxdigital.com/app/themes/spinxdigital/assets/images/icon-email.svg") no-repeat 0;padding-left:5px;font-weight:500;background-size:18px;height:48px;font-family:"Inter Medium",sans-serif;}
 .marquee-button:before {left:0;}
 .marquee-button:after {left:100%;}
 .marquee-button .label {opacity:0;pointer-events:none;}
 .marquee-button .bg {background:#fff;height:100%;left:0;opacity:0;position:absolute;top:0;transition:opacity .3s ease;width:100%;z-index:1;}
 .marquee-button:hover .bg {opacity:1;}
+.marquee-button:hover:before,.marquee-button:hover:after{filter: brightness(0);}
 @media (prefers-reduced-motion:reduce) {.marquee-button:after,.marquee-button:before {-webkit-animation:none;animation:none;}}
 @media (prefers-reduced-motion:reduce) {.marquee-button__background {transition:none;}}
 @-webkit-keyframes marquee {0% {transform:translateZ(0);}to {transform:translate3d(-100%,0,0);}}
