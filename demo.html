@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGL Bulge Effect on Scroll with Three.js</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #image-container {
+            height: 2000px; /* Ensure enough scrollable height */
+        }
+        #image {
+            width: 80%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <img id="image" src="work-1.jpg" alt="Work 1">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <!-- Vertex shader -->
+    <script id="vertexShader" type="x-shader/x-vertex">
+        varying vec2 vUv;
+        void main() {
+            vUv = uv;
+            gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+    </script>
+
+    <!-- Fragment shader -->
+    <script id="fragmentShader" type="x-shader/x-fragment">
+        varying vec2 vUv;
+        uniform sampler2D texture;
+        uniform float scrollY;
+        uniform float bulgeStrength;
+        uniform vec2 bulgeCenter;
+
+        void main() {
+            vec2 uv = vUv;
+            vec2 delta = uv - bulgeCenter;
+            float dist = length(delta);
+            vec2 dir = delta / dist;
+            vec2 offset = dir * sin(dist * bulgeStrength - scrollY);
+            vec2 newUV = uv + offset;
+            gl_FragColor = texture2D(texture, newUV);
+        }
+    </script>
+
+    <script>
+        // Set up Three.js scene
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Create a plane geometry to cover the entire screen
+        const geometry = new THREE.PlaneGeometry(window.innerWidth, window.innerHeight);
+
+        // Load texture
+        const textureLoader = new THREE.TextureLoader();
+        const texture = textureLoader.load('work-1.jpg');
+
+        // Create shader material with bulge effect
+        const material = new THREE.ShaderMaterial({
+            uniforms: {
+                texture: { value: texture },
+                scrollY: { value: 0 },
+                bulgeStrength: { value: 0.1 },
+                bulgeCenter: { value: new THREE.Vector2(0.5, 0.5) }
+            },
+            vertexShader: document.getElementById('vertexShader').innerHTML,
+            fragmentShader: document.getElementById('fragmentShader').innerHTML
+        });
+
+        // Create a mesh with the geometry and material
+        const plane = new THREE.Mesh(geometry, material);
+        scene.add(plane);
+
+        // Set camera position
+        camera.position.z = 1;
+
+        // Render function
+        function render() {
+            renderer.render(scene, camera);
+        }
+
+        // Handle scroll event
+        window.addEventListener('scroll', function() {
+            material.uniforms.scrollY.value = window.scrollY;
+            render();
+        });
+
+        render(); // Initial render
+    </script>
+</body>
+</html>
