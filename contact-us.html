@@ -534,7 +534,7 @@
                     </div>
                   </div>
                   <!-- Help in Project -->
-                  <div class="col-md-12 mt-4 mb-5">
+                  <div class="col-md-12 mb-5">
                     <fieldset>
                       <legend class="gfield_label">
                         Select all that apply<span class="req-astrik">*</span>
@@ -695,27 +695,100 @@
                       </div>
                     </fieldset>
                   </div>
-                  <!-- Terms & Conditions -->
-                  <div class="col-md-12">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input terms-conditions"
-                        type="checkbox"
-                        value=""
-                        id="term-conditions"
-                      />
-                      <label class="form-check-label" for="term-conditions">
-                        Yes, I would like WebShark Web Services to contact me
-                        based on the information provided above.remobe Read our
-                        Privacy Policy for details on how your information may
-                        be used. I understand that using the below captcha would
-                        place cookies. I am aware that I can raise the same
-                        query to coffee@webshark.in without using the below
-                      </label>
+                  <!-- How did you reach us -->
+                  <!-- Heading -->
+                  <div class="col-md-12 mb-5">
+                    <div class="fsection-heading">
+                      <h3>How did you reach us?</h3>
                     </div>
                   </div>
-                  <!-- Submit Button -->
+                  <!-- Check Boxes -->
                   <div class="col-md-12">
+                    <address class="collaborators_select">
+                      <label class="checkbox-form_component"
+                        ><div class="checkbox-input"></div>
+                        <input
+                          id="Referral-2"
+                          type="checkbox"
+                          name="Referral-2"
+                        /><span class="text-size-regular-20" for="Referral-2"
+                          >Google</span
+                        ></label
+                      >
+                      <label class="w-checkbox checkbox-form_component"
+                        ><div class="checkbox-input"></div>
+                        <input
+                          id="Referral-2"
+                          type="checkbox"
+                          name="Referral-2"
+                        /><span class="text-size-regular-20" for="Referral-2"
+                          >Referral</span
+                        ></label
+                      ><label class="w-checkbox checkbox-form_component"
+                        ><div class="checkbox-input"></div>
+                        <input
+                          id="Media-News-2"
+                          type="checkbox"
+                          name="Media-News-2"
+                        /><span class="text-size-regular-20" for="Media-News-2"
+                          >Media &amp; News</span
+                        ></label
+                      ><label class="w-checkbox checkbox-form_component"
+                        ><div class="checkbox-input"></div>
+                        <input
+                          id="LinkedIn-2"
+                          type="checkbox"
+                          name="LinkedIn-2"
+                        /><span class="text-size-regular-20" for="LinkedIn-2"
+                          >LinkedIn</span
+                        ></label
+                      ><label class="w-checkbox checkbox-form_component"
+                        ><div class="checkbox-input"></div>
+                        <input
+                          id="Instagram-Facebook-2"
+                          type="checkbox"
+                          name="Instagram-Facebook-2"
+                        /><span
+                          class="text-size-regular-20"
+                          for="Instagram-Facebook-2"
+                          >Instagram/Facebook</span
+                        ></label
+                      ><label class="w-checkbox checkbox-form_component"
+                        ><div class="checkbox-input"></div>
+                        <input
+                          id="Emails-Newsletter-2"
+                          type="checkbox"
+                          name="Emails-Newsletter-2"
+                        /><span
+                          class="text-size-regular-20"
+                          for="Emails-Newsletter-2"
+                          >Emails/Newsletter</span
+                        ></label
+                      ><label class="w-checkbox checkbox-form_component"
+                        ><div class="checkbox-input"></div>
+                        <input
+                          id="Search-2"
+                          type="checkbox"
+                          name="Search-2"
+                        /><span class="text-size-regular-20" for="Search-2"
+                          >Search</span
+                        ></label
+                      ><label class="w-checkbox checkbox-form_component"
+                        ><div class="checkbox-input"></div>
+                        <input
+                          id="Other-Sources-2"
+                          type="checkbox"
+                          name="Other-Sources-2"
+                        /><span
+                          class="text-size-regular-20"
+                          for="Other-Sources-2"
+                          >Other Sources</span
+                        ></label
+                      >
+                    </address>
+                  </div>
+                  <!-- Submit Button -->
+                  <div class="col-md-12 text-end">
                     <button class="submit-btn">Send Inquery</button>
                   </div>
                 </div>
@@ -1757,7 +1830,7 @@
         });
       });
     </script>
-    <!-- Form Check Box Fields -->
+    <!-- What can we help you -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var checkboxes = document.querySelectorAll(".gfield-choice-input");
@@ -1774,6 +1847,22 @@
         checkboxes.forEach(function (checkbox) {
           checkbox.addEventListener("change", updateClass);
           updateClass({ target: checkbox });
+        });
+      });
+
+      // How did you reach us? Section
+      document.addEventListener("DOMContentLoaded", function () {
+        const checkboxes = document.querySelectorAll(
+          '.collaborators_select input[type="checkbox"]'
+        );
+        checkboxes.forEach(function (checkbox) {
+          checkbox.addEventListener("change", function () {
+            if (this.checked) {
+              this.closest("label").classList.add("checked");
+            } else {
+              this.closest("label").classList.remove("checked");
+            }
+          });
         });
       });
     </script>

@@ -1979,7 +1979,7 @@ position: absolute;
 .contact-main-block .form-heading p{margin-bottom: 48px;display: block;color: #b7b8c0;opacity: .96;font-size: 18px;}
 .contact-main-block .form-floating .form-control{background-color: transparent;border:none;border-radius: 0px;border-bottom:2px solid #45474e;padding: 4px 0px;box-shadow:none;font-size: 26px;color:#FFF }
 .contact-main-block .form-floating label{font-size: 26px;opacity: .5;padding: 0px;top:15px;transition: .5s;}
-.contact-main-block .form-floating > .form-control:focus ~ label, .contact-main-block .form-floating > .form-control.filled ~ label{transform: translateY(-25px) scale(.6);}
+.contact-main-block .form-floating > .form-control:focus ~ label, .contact-main-block .form-floating > .form-control.filled ~ label{transform: translateY(-30px) scale(.6);}
 .contact-main-block .form-floating > .form-control:focus, .contact-main-block .form-floating > .form-control.filled{border-bottom-color:#3f92cf}
 .contact-main-block .req-astrik{color:red;font-size: 18px;padding-left: 3px;}
 .contact-main-block .form-floating option{color:#000;font-size: 18px;}
@@ -1992,15 +1992,23 @@ position: absolute;
 .contact-main-block .gchoice:hover label{opacity: .6;}
 .contact-main-block .gchoice label{transition: .3s;opacity: 1;top: -6px;position: initial;padding: 0 0 0 16px;font-size: 20px;font-weight: 400;line-height: 1.6;width: 100%;}
 .contact-main-block .gchoice input{box-shadow: none !important;transition: .3s;background-color: transparent;width: 20px;height: 20px;margin: 16px 0 0 0;border: 1.5px solid #6d6f78;background-color: transparent;border-radius: 0 !important;border-color: #6d6f78;margin-top: 0;position: relative;z-index: 2;appearance: none;}
-.contact-main-block .submit-btn{transition: .3s;text-transform: uppercase;background-color: #3f92cf;color: #fff;min-width: 266px;line-height: 20px;font-weight: 500;min-height: 60px;border: 0;margin-top: 48px;}
+.contact-main-block .submit-btn{transition: .3s;text-transform: uppercase;background-color: #fff;color:#000;min-width: 266px;line-height: 20px;font-weight: 500;min-height: 60px;border: 0;margin-top: 48px;border-radius: 50px;}
+.contact-main-block .submit-btn:hover{background-color: #fff;color: #000;}
 .contact-main-block .form-check label{margin-bottom: 48px;display: block;color: #b7b8c0;opacity: .96;font-size: 16px;padding-left: 40px;}
 .contact-main-block .form-check input{transition: .3s;background-color: transparent;width: 20px;height: 20px;margin: 16px 0 0 0;border: 1.5px solid #6d6f78;background-color: transparent;border-radius: 0 !important;border-color: #6d6f78;margin-top: 0;position: relative;z-index: 2;appearance: none;box-shadow: none !important;}
 .contact-main-block .form-check{padding: 0px;}
-.contact-main-block .submit-btn:hover{background-color: #fff;color: #000;}
+.contact-main-block .collaborators_select{grid-column-gap: .875rem;grid-row-gap: 1rem;flex-wrap: wrap;grid-template-rows: auto auto;grid-template-columns: repeat(auto-fit, minmax(151px, 1fr));grid-auto-columns: auto;grid-auto-flow: row;place-content: flex-start;place-items: center start;min-height: auto;display: flex;}
+.contact-main-block .checkbox-form_component.checked{background-color: #fff;}
+.contact-main-block .checkbox-form_component.checked .text-size-regular-20{color: #000;}
+.contact-main-block .collaborators_select .checkbox-form_component{grid-column-gap: 0px;border: 1px solid #ffffff;border-radius: 50px;flex-direction: row;justify-content: center;align-items: center;width: auto;min-width: auto;height: auto;min-height: auto;max-height: none;margin-bottom: 0;padding: 10px 30px;font-weight: 500;display: flex;position: relative;}
+.contact-main-block .collaborators_select .checkbox-input{position: absolute;z-index: 10;cursor: default;border: 1px solid #0000004d;border-radius: 50px;flex: 0 auto;width: 100%;height: 100%;margin-top: 0;margin-left: 0;font-weight: 500;transition: background-color 10ms ease-in;display: block;position: absolute;inset: 0%;}
+.contact-main-block .collaborators_select input{opacity: 0;position: absolute;z-index: -1;}
+.contact-main-block .collaborators_select .text-size-regular-20{z-index: 5;color: #fff;font-size: 16px;font-style: normal;font-weight: 400;line-height: 1.4;position: relative;}
 
-.our-presence{padding: 80px 0px;}
-.our-presence .location{display: flex;flex-direction: column;gap: 30px;}
-.our-presence .location_wapper{border-top: 1px #aeaeae;border-bottom: 1px solid #000;justify-content: space-between;align-items: center;margin-top: 0;margin-bottom: 0;padding-top: 20px;padding-bottom: 20px;display: flex;background-color: #fff;color: #000;padding: 20px;}
+
+.our-presence{padding: 80px 0px;background-color: #fff;}
+.our-presence .location{display: flex;flex-direction: column;gap: 0px;}
+.our-presence .location_wapper{border-top: 1px #aeaeae;border-bottom: 1px solid #000;justify-content: space-between;align-items: center;margin-top: 0;margin-bottom: 0;padding: 40px 0px;display: flex;color: #000;}
 .our-presence .content-box{display: flex;align-items: center;justify-content: space-between;width: 30%;}
 .our-presence .content-box.img-box{overflow: hidden;}
 .our-presence .content-box img{width: 100%;height: 200px;object-fit: cover;transition: .3s;}
