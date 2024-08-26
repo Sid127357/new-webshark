@@ -2021,8 +2021,8 @@ position: absolute;
 .our-presence .location_wapper .content-box:nth-last-child(1){width: 14%;}
 
 .our-presence.copy{background-color: #000;color:#fff}
-.our-presence.copy .location_wapper{border-bottom: 1px solid #fff;}
-.our-presence.copy .location_wapper:nth-child(1){border-top: 1px solid #fff;}
+.our-presence.copy .location_wapper{border-bottom: 1px solid #ffffff4c;}
+.our-presence.copy .location_wapper:nth-child(1){border-top: 1px solid #ffffff4c;}
 .our-presence.copy .content-box p{font-size: 18px;}
 .our-presence.copy .content-box a{color: #fff;}
 
