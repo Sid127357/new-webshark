@@ -1,928 +1,2223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About US - Webshark Web Services</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- Bootstrap CSS -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link href="assets/css/all.min.css" rel="stylesheet">
-  <link href="assets/css/jquery-ui.css" rel="stylesheet">
-  <link href="assets/css/custom.css" rel="stylesheet">
-
-</head>
-<body>
-
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg">
-    <div class="container">
-        <div class="top-header">
-
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+    <link href="assets/css/jquery-ui.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="top-header"></div>
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="https://webshark.b-cdn.net/img/webshark_new_logo.webp"
+            alt="Wbshark Logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Expertise </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hire </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about-us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
         </div>
-      <a class="navbar-brand" href="#">
-        <img src="https://webshark.b-cdn.net/img/webshark_new_logo.webp" alt="Wbshark Logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Expertise </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Hire </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+        <div class="cta_btn">
+          <a
+            data-marquee-text="START A PROJECT"
+            class="marquee-button"
+            href="./contact-us.html"
+          >
+            <span role="presentation" class="label">START A PROJECT</span>
+            <span class="visually-hidden">START A PROJECT</span>
+            <span class="bg"></span>
+          </a>
+        </div>
       </div>
-    </div>
-</nav>
-
-<div class="has-smooth" id="has_smooth"></div>
-<div id="smooth-wrapper">
-<div id="smooth-content">
-
-<main>
-
-    <!-- Main banner Section -->
-
-    <section class="contact-main-banner">
-        <div class="container">
-            <div class="contact-main-heading">About Us</div>
-            <div class="contact-bedcrumb"><a href="#">Home</a><span>•</span>About Us</div>
-        </div>
-    </section>
-
-    <!--What We Do-->
-
-    <section class="what-we-do-main">
-        <div class="container">
-            <div class="row align-bottom">
-                <div class="col-md-3">
-                    <div class="what-we-do-img">
-                        <div class="img-box">
-                            <div class="img">
-                                <img src="assets/img/about/trophy-1.png" alt="">
-                                <div class="textOne">
-                                    16+
-                                </div>
-                                <div class="textTwo">
-                                    Years of Excellence
-                                </div>
-                            </div>
-                        </div>
-                        <div class="img-anim-round" id="imgRoundOne">
-                            <img src="assets/img/about/img-round-abt-3.png" alt="">
-                        </div>
-                    </div>
+    </nav>
+    <div class="has-smooth" id="has_smooth"></div>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <!-- About Banner -->
+          <section class="about-block" id="about-box">
+            <div class="container">
+              <div class="text-wrapper">
+                <div class="text-box">
+                  <h1>We are</h1>
+                  <h2>Empowering Digital Success with Creative Precision.</h2>
                 </div>
-                <div class="col-md-9">
-                    <div class="what-we-do-content">
-                        <div class="what-we-do-head">
-                            <h3>What We Do</h3>
-                        </div>
-                        <div class="what-we-do-desc">
-                            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts.</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>
-    </section>
-
-    <!--Our Mission-->
-
-    <section class="our-mission-main">
-        <div class="container">
-            <div class="w-60">
-                <div class="our-mission-head">
-                    <h3>Our Mission</h3>
-                </div>
-                <div class="our-mission-desc">
-                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic.</p>
-                </div>
+            <div class="counter-box-wrapper">
+              <!-- Box-1 -->
+              <div class="counter-box one">
+                <h3>150+</h3>
+                <h4>Projects Completed</h4>
+              </div>
+              <!-- Box-2 -->
+              <div class="counter-box two">
+                <h3>120+</h3>
+                <h4>Teams Created</h4>
+                <img
+                  src="./assets/img/icons/shape-3.svg"
+                  alt=""
+                  class="about-counter-img-one"
+                />
+              </div>
+              <!-- Box-3 -->
+              <div class="counter-box three">
+                <h3>90%</h3>
+                <h4>Satisfied Client</h4>
+                <img
+                  src="./assets/img/icons/shape-3.svg"
+                  alt=""
+                  class="about-counter-img-one"
+                />
+              </div>
             </div>
-                
-        </div>
-    </section>
-
-    <!--Our Vision-->
-
-    <section class="our-vision-main">
-        <div class="container">
-            <div class="w-60 ml-auto">
-                <div class="our-vision-head">
-                    <h3>Our Vision</h3>
+          </section>
+          <!-- Values  At Our Core -->
+          <section class="our-value-section">
+            <div class="container">
+              <div class="section-title text-center">
+                <h2>Values at Our Core</h2>
+                <p>
+                  Discover our unwavering dedication to integrity, a commitment
+                  that forms the cornerstone of our agency's operations and
+                  relationships.
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-md-4 d-flex">
+                  <div class="our-value-item">
+                    <div class="our-value-icon-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651ea1f0e790fe1817e892d9_value-01.svg"
+                        loading="lazy"
+                        alt=""
+                        class="our-value-icon"
+                      /><img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6514033267729bf74db141a0_shape-04.svg"
+                        loading="eager"
+                        alt=""
+                        class="our-value-left"
+                      /><img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6513f577722bbead5d867989_shape-03.svg"
+                        loading="eager"
+                        alt=""
+                        class="our-value-right"
+                      />
+                    </div>
+                    <h5>Diversity and Inclusion</h5>
+                    <p>
+                      Celebrating diversity in our team and perspectives, we
+                      create an inclusive environment that values and respects
+                      all individuals.
+                    </p>
+                  </div>
                 </div>
-                <div class="our-vision-desc">
-                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used in the graphic.</p>
+                <div class="col-md-4 d-flex">
+                  <div class="our-value-item">
+                    <div class="our-value-icon-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651ea3786b576bec452206a8_value-02.svg"
+                        loading="lazy"
+                        alt=""
+                        class="our-value-icon"
+                      /><img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6514033267729bf74db141a0_shape-04.svg"
+                        loading="eager"
+                        alt=""
+                        class="our-value-left"
+                      /><img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6513f577722bbead5d867989_shape-03.svg"
+                        loading="eager"
+                        alt=""
+                        class="our-value-right"
+                      />
+                    </div>
+                    <h5>Integrity</h5>
+                    <p>
+                      Upholding the highest ethical standards in all our
+                      interactions, we build trust through transparency,
+                      honesty, and fairness.
+                    </p>
+                  </div>
                 </div>
+                <div class="col-md-4 d-flex">
+                  <div class="our-value-item">
+                    <div class="our-value-icon-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6514033267729bf74db141a0_shape-04.svg"
+                        loading="eager"
+                        alt=""
+                        class="our-value-left"
+                      /><img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651ea4aceeccf08111344f8d_value-03.svg"
+                        loading="lazy"
+                        alt=""
+                        class="our-value-icon"
+                      /><img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6513f577722bbead5d867989_shape-03.svg"
+                        loading="eager"
+                        alt=""
+                        class="our-value-right"
+                      />
+                    </div>
+                    <h5>Learning and Growth</h5>
+                    <p>
+                      Fostering a culture of continuous learning, growth, and
+                      skill development for our team members.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-                
-        </div>
-    </section>
-
-    <!--Our Primary Business-->
-
-    <section class="our-business">
-        <div class="container">
-            <div class="our-business-main-head">
-                <h2>Our Primary Business</h2>
+          </section>
+          <!-- Expertise -->
+          <section class="feature-section">
+            <div class="container">
+              <div class="row main-wrapper">
+                <div class="col-md-6">
+                  <div class="feature-wrap d-flex flex-column gap-5">
+                    <div class="feature-item">
+                      <div class="feature-title-wrap d-flex align-items-center">
+                        <h2 class="heading-h5">01.</h2>
+                        <h3 class="heading-h5">Best technology tools</h3>
+                      </div>
+                      <div class="feature-content d-flex">
+                        <img
+                          src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/65141b673d7771a5a15a45bb_service-01.svg"
+                          loading="eager"
+                          alt=""
+                          class="feature-image"
+                        />
+                        <p class="no-margin">
+                          The homepage should provide a clear overview of the
+                          agency's core services, unique value proposition, and
+                          brand identity. It should be visually appealing and
+                          have a compelling call-to-action to encourage visitors
+                          to explore further.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="feature-item">
+                      <div class="feature-title-wrap d-flex align-items-center">
+                        <h2 class="heading-h5 no-margin">02.</h2>
+                        <h3 class="heading-h5 no-margin">
+                          Fast &amp; responsive results
+                        </h3>
+                      </div>
+                      <div class="feature-content d-flex">
+                        <img
+                          src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/65141b66c4d427b9116c3900_service-02.svg"
+                          loading="eager"
+                          alt=""
+                          class="feature-image"
+                        />
+                        <p class="no-margin">
+                          This section introduces the agency, its history,
+                          mission, and values. It should also highlight key team
+                          members and their expertise to build trust and
+                          credibility.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="feature-item">
+                      <div class="feature-title-wrap d-flex align-items-center">
+                        <h2 class="heading-h5">03.</h2>
+                        <h3 class="heading-h5">More flexible pricing</h3>
+                      </div>
+                      <div class="feature-content d-flex">
+                        <img
+                          src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/65141b66b127dd423425b45d_service-03.svg"
+                          loading="eager"
+                          alt=""
+                          class="feature-image"
+                        />
+                        <p class="no-margin">
+                          A detailed breakdown of the agency's services or
+                          products is crucial. This section should explain what
+                          the agency offers, the benefits of each service, and
+                          why potential clients should choose them.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="feature-item">
+                      <div class="feature-title-wrap d-flex align-items-center">
+                        <h2 class="heading-h5">04.</h2>
+                        <h3 class="heading-h5">Data security guarantee</h3>
+                      </div>
+                      <div class="feature-content d-flex">
+                        <img
+                          src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/65141cc1bcc2e9571d2907c1_service-04.svg"
+                          loading="eager"
+                          alt=""
+                          class="feature-image"
+                        />
+                        <p class="no-margin">
+                          Positive feedback and testimonials from previous
+                          clients provide social proof and build confidence in
+                          the agency's abilities.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="feature-content-wrap">
+                    <div class="right-feature-title">
+                      <h2 class="no-margin">
+                        What are the key features of the Webshark solution?
+                      </h2>
+                      <a href="/about" class="btn btn-white"
+                        ><img
+                          src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6513b211c4e64d194ce8a8b8_button-icon-03.svg"
+                          loading="lazy"
+                          class="button-icon"
+                        />
+                        <div>About Us</div></a
+                      >
+                    </div>
+                    <div class="feature-relative">
+                      <div class="feature-image-wrap">
+                        <img
+                          src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6514204f1b1f19f4555f0816_service-01.jpg"
+                          loading="eager"
+                          srcset="
+                            https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6514204f1b1f19f4555f0816_service-01-p-500.jpg 500w,
+                            https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6514204f1b1f19f4555f0816_service-01.jpg       600w
+                          "
+                          alt=""
+                          class="feature-right-image"
+                        /><img
+                          src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651420a04e642ee1b9dd0457_shape-04.svg"
+                          loading="eager"
+                          alt=""
+                          class="feature-decoration-shape"
+                        />
+                      </div>
+                      <div
+                        data-w-id="4311462f-39c6-5f5d-9f94-527dcea2757f"
+                        class="feature-video-position"
+                      >
+                        <a
+                          href="#"
+                          class="feature-video-rounded w-inline-block w-lightbox"
+                          aria-label="open lightbox"
+                          aria-haspopup="dialog"
+                          ><img
+                            src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6514230e14d69d800f545e0f_rounded.svg"
+                            loading="eager"
+                            alt=""
+                            class="feature-video-image"
+                            style="
+                              will-change: transform;
+                              transform: translate3d(0px, 0px, 0px)
+                                scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+                                rotateZ(40deg) skew(0deg);
+                              transform-style: preserve-3d;
+                            "
+                          /><img
+                            src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651423442bc57341a2c20cf4_play.svg"
+                            loading="lazy"
+                            alt=""
+                            class="feature-play-icon"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="business-card row">
-                        <div class="col-12 card-col-one">
-                            <div class="card-img">
-                                <img src="assets/img/about/about-business-img-one.jpg" alt="Card image cap">
-                            </div>
-                        </div>
-                        <div class="col-12 card-col-two">
-                            <div class="card-content">
-                                <h5>Web Development & Web Design Services</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="business-card row">
-                        <div class="col-12 card-col-one order-2">
-                            <div class="card-img">
-                                <img src="assets/img/about/about-business-img-one.jpg" alt="Card image cap">
-                            </div>
-                        </div>
-                        <div class="col-12 card-col-two order-1">
-                            <div class="card-content">
-                                <h5>Web Development & Web Design Services</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="business-card row">
-                        <div class="col-12 card-col-one">
-                            <div class="card-img">
-                                <img src="assets/img/about/about-business-img-one.jpg" alt="Card image cap">
-                            </div>
-                        </div>
-                        <div class="col-12 card-col-two">
-                            <div class="card-content">
-                                <h5>Web Development & Web Design Services</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="business-card row">
-                        <div class="col-12 card-col-one order-2">
-                            <div class="card-img">
-                                <img src="assets/img/about/about-business-img-one.jpg" alt="Card image cap">
-                            </div>
-                        </div>
-                        <div class="col-12 card-col-two order-1">
-                            <div class="card-content">
-                                <h5>Web Development & Web Design Services</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Our Values Section-->
-    <section class="our-values-main">
-        <div class="container">
-            <!-- <div class="values-head">
-                <h2>Our Values</h2>
-            </div> -->
-            <div class="row our-values-inner">
-                <div class="col-md-4">
-                    <div class="values-card">
-                        <div class="value-card-heading">
-                            <h5>Teamwork</h5>
-                        </div>
-                        <div class="value-card-divider"></div>
-                        <div class="value-card-content">
-                            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="values-card">
-                        <div class="value-card-heading">
-                            <h5>Learn</h5>
-                        </div>
-                        <div class="value-card-divider"></div>
-                        <div class="value-card-content">
-                            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="values-card">
-                        <div class="value-card-heading">
-                            <h5>Integrity</h5>
-                        </div>
-                        <div class="value-card-divider"></div>
-                        <div class="value-card-content">
-                            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="values-card">
-                        <div class="value-card-heading">
-                            <h5>Respect</h5>
-                        </div>
-                        <div class="value-card-divider"></div>
-                        <div class="value-card-content">
-                            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="values-card">
-                        <div class="value-card-heading">
-                            <h5>Commitment</h5>
-                        </div>
-                        <div class="value-card-divider"></div>
-                        <div class="value-card-content">
-                            <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--Client SEction-->
-
-    <section class="clietele-main">
-        <div class="container">
-            <div class="clientele-head about-us-page">Join Our Elite Clientele</div>
-            <div class="clientele-inner">
-                <div class="slider">
-                    <div class="slide-track">
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-1.png"alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-2.png"alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-3.png"alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-4.png"alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-5.png"alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-6.png"alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-7.png"alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-8.png"alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-1.png"alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-2.png"alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-3.png"alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-4.png"alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-5.png"alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-6.png"alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-7.png"alt="" />
-                        </div>
-                        <div class="slide">
-                            <img src="assets/img/contact/new-new-8.png"alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="tw-footer" class="tw-footer footer-top-space">
-        <div class="footer-top">
-            <div class="container-fluid mainnewfooter">
+          </section>
+          <!-- Real Talk Impact -->
+          <section class="talk-impact">
+            <div class="container">
+              <div class="talk-wrapper">
                 <div class="row">
-                    <div class="col-md-12 col-lg-6 footernew-top">
-                        
-                       <form action="../footerformsubmit.php" method="post" class="econtact-form" >
-                           <div class="form-group row">
-                            <h5 class="newform-heading">Share Your Project Details</h5>
-                                <input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-name" id="name" aria-required="true" aria-invalid="false" placeholder="Your Name" required="">
-                                            <input type="email" name="email" value="" class="wpcf7-form-control col-6 r-padding wpcf7-text wpcf7-validates-as-required form-control form-name" id="name" aria-required="true" aria-invalid="false" placeholder="Your Email" required="">
-                                            <input type="text" name="phone" value="" class="wpcf7-form-control col-6 wpcf7-text wpcf7-validates-as-required form-control form-name" id="name" aria-required="true" pattern="^([0|\+[0-9]{1,5})?([0-9]{10})$" title="Please Enter Correct Phone Number" aria-invalid="false" placeholder="Your Phone Number" required="">
-                                            <select class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-name" name="country" required="">
-                                                <option disabled="" selected="">Select Your Country*</option>
-                                                <option value="AFG">Afghanistan</option>
-                                                <option value="ALA">Åland Islands</option>
-                                                <option value="ALB">Albania</option>
-                                                <option value="DZA">Algeria</option>
-                                                <option value="ASM">American Samoa</option>
-                                                <option value="AND">Andorra</option>
-                                                <option value="AGO">Angola</option>
-                                                <option value="AIA">Anguilla</option>
-                                                <option value="ATA">Antarctica</option>
-                                                <option value="ATG">Antigua and Barbuda</option>
-                                                <option value="ARG">Argentina</option>
-                                                <option value="ARM">Armenia</option>
-                                                <option value="ABW">Aruba</option>
-                                                <option value="AUS">Australia</option>
-                                                <option value="AUT">Austria</option>
-                                                <option value="AZE">Azerbaijan</option>
-                                                <option value="BHS">Bahamas</option>
-                                                <option value="BHR">Bahrain</option>
-                                                <option value="BGD">Bangladesh</option>
-                                                <option value="BRB">Barbados</option>
-                                                <option value="BLR">Belarus</option>
-                                                <option value="BEL">Belgium</option>
-                                                <option value="BLZ">Belize</option>
-                                                <option value="BEN">Benin</option>
-                                                <option value="BMU">Bermuda</option>
-                                                <option value="BTN">Bhutan</option>
-                                                <option value="BOL">Bolivia, Plurinational State of</option>
-                                                <option value="BES">Bonaire, Sint Eustatius and Saba</option>
-                                                <option value="BIH">Bosnia and Herzegovina</option>
-                                                <option value="BWA">Botswana</option>
-                                                <option value="BVT">Bouvet Island</option>
-                                                <option value="BRA">Brazil</option>
-                                                <option value="IOT">British Indian Ocean Territory</option>
-                                                <option value="BRN">Brunei Darussalam</option>
-                                                <option value="BGR">Bulgaria</option>
-                                                <option value="BFA">Burkina Faso</option>
-                                                <option value="BDI">Burundi</option>
-                                                <option value="KHM">Cambodia</option>
-                                                <option value="CMR">Cameroon</option>
-                                                <option value="CAN">Canada</option>
-                                                <option value="CPV">Cape Verde</option>
-                                                <option value="CYM">Cayman Islands</option>
-                                                <option value="CAF">Central African Republic</option>
-                                                <option value="TCD">Chad</option>
-                                                <option value="CHL">Chile</option>
-                                                <option value="CHN">China</option>
-                                                <option value="CXR">Christmas Island</option>
-                                                <option value="CCK">Cocos (Keeling) Islands</option>
-                                                <option value="COL">Colombia</option>
-                                                <option value="COM">Comoros</option>
-                                                <option value="COG">Congo</option>
-                                                <option value="COD">Congo, the Democratic Republic of the</option>
-                                                <option value="COK">Cook Islands</option>
-                                                <option value="CRI">Costa Rica</option>
-                                                <option value="CIV">Côte d'Ivoire</option>
-                                                <option value="HRV">Croatia</option>
-                                                <option value="CUB">Cuba</option>
-                                                <option value="CUW">Curaçao</option>
-                                                <option value="CYP">Cyprus</option>
-                                                <option value="CZE">Czech Republic</option>
-                                                <option value="DNK">Denmark</option>
-                                                <option value="DJI">Djibouti</option>
-                                                <option value="DMA">Dominica</option>
-                                                <option value="DOM">Dominican Republic</option>
-                                                <option value="ECU">Ecuador</option>
-                                                <option value="EGY">Egypt</option>
-                                                <option value="SLV">El Salvador</option>
-                                                <option value="GNQ">Equatorial Guinea</option>
-                                                <option value="ERI">Eritrea</option>
-                                                <option value="EST">Estonia</option>
-                                                <option value="ETH">Ethiopia</option>
-                                                <option value="FLK">Falkland Islands (Malvinas)</option>
-                                                <option value="FRO">Faroe Islands</option>
-                                                <option value="FJI">Fiji</option>
-                                                <option value="FIN">Finland</option>
-                                                <option value="FRA">France</option>
-                                                <option value="GUF">French Guiana</option>
-                                                <option value="PYF">French Polynesia</option>
-                                                <option value="ATF">French Southern Territories</option>
-                                                <option value="GAB">Gabon</option>
-                                                <option value="GMB">Gambia</option>
-                                                <option value="GEO">Georgia</option>
-                                                <option value="DEU">Germany</option>
-                                                <option value="GHA">Ghana</option>
-                                                <option value="GIB">Gibraltar</option>
-                                                <option value="GRC">Greece</option>
-                                                <option value="GRL">Greenland</option>
-                                                <option value="GRD">Grenada</option>
-                                                <option value="GLP">Guadeloupe</option>
-                                                <option value="GUM">Guam</option>
-                                                <option value="GTM">Guatemala</option>
-                                                <option value="GGY">Guernsey</option>
-                                                <option value="GIN">Guinea</option>
-                                                <option value="GNB">Guinea-Bissau</option>
-                                                <option value="GUY">Guyana</option>
-                                                <option value="HTI">Haiti</option>
-                                                <option value="HMD">Heard Island and McDonald Islands</option>
-                                                <option value="VAT">Holy See (Vatican City State)</option>
-                                                <option value="HND">Honduras</option>
-                                                <option value="HKG">Hong Kong</option>
-                                                <option value="HUN">Hungary</option>
-                                                <option value="ISL">Iceland</option>
-                                                <option value="IND" selected="selected">India</option>
-                                                <option value="IDN">Indonesia</option>
-                                                <option value="IRN">Iran, Islamic Republic of</option>
-                                                <option value="IRQ">Iraq</option>
-                                                <option value="IRL">Ireland</option>
-                                                <option value="IMN">Isle of Man</option>
-                                                <option value="ISR">Israel</option>
-                                                <option value="ITA">Italy</option>
-                                                <option value="JAM">Jamaica</option>
-                                                <option value="JPN">Japan</option>
-                                                <option value="JEY">Jersey</option>
-                                                <option value="JOR">Jordan</option>
-                                                <option value="KAZ">Kazakhstan</option>
-                                                <option value="KEN">Kenya</option>
-                                                <option value="KIR">Kiribati</option>
-                                                <option value="PRK">Korea, Democratic People's Republic of</option>
-                                                <option value="KOR">Korea, Republic of</option>
-                                                <option value="KWT">Kuwait</option>
-                                                <option value="KGZ">Kyrgyzstan</option>
-                                                <option value="LAO">Lao People's Democratic Republic</option>
-                                                <option value="LVA">Latvia</option>
-                                                <option value="LBN">Lebanon</option>
-                                                <option value="LSO">Lesotho</option>
-                                                <option value="LBR">Liberia</option>
-                                                <option value="LBY">Libya</option>
-                                                <option value="LIE">Liechtenstein</option>
-                                                <option value="LTU">Lithuania</option>
-                                                <option value="LUX">Luxembourg</option>
-                                                <option value="MAC">Macao</option>
-                                                <option value="MKD">Macedonia, the former Yugoslav Republic of
-                                                </option>
-                                                <option value="MDG">Madagascar</option>
-                                                <option value="MWI">Malawi</option>
-                                                <option value="MYS">Malaysia</option>
-                                                <option value="MDV">Maldives</option>
-                                                <option value="MLI">Mali</option>
-                                                <option value="MLT">Malta</option>
-                                                <option value="MHL">Marshall Islands</option>
-                                                <option value="MTQ">Martinique</option>
-                                                <option value="MRT">Mauritania</option>
-                                                <option value="MUS">Mauritius</option>
-                                                <option value="MYT">Mayotte</option>
-                                                <option value="MEX">Mexico</option>
-                                                <option value="FSM">Micronesia, Federated States of</option>
-                                                <option value="MDA">Moldova, Republic of</option>
-                                                <option value="MCO">Monaco</option>
-                                                <option value="MNG">Mongolia</option>
-                                                <option value="MNE">Montenegro</option>
-                                                <option value="MSR">Montserrat</option>
-                                                <option value="MAR">Morocco</option>
-                                                <option value="MOZ">Mozambique</option>
-                                                <option value="MMR">Myanmar</option>
-                                                <option value="NAM">Namibia</option>
-                                                <option value="NRU">Nauru</option>
-                                                <option value="NPL">Nepal</option>
-                                                <option value="NLD">Netherlands</option>
-                                                <option value="NCL">New Caledonia</option>
-                                                <option value="NZL">New Zealand</option>
-                                                <option value="NIC">Nicaragua</option>
-                                                <option value="NER">Niger</option>
-                                                <option value="NGA">Nigeria</option>
-                                                <option value="NIU">Niue</option>
-                                                <option value="NFK">Norfolk Island</option>
-                                                <option value="MNP">Northern Mariana Islands</option>
-                                                <option value="NOR">Norway</option>
-                                                <option value="OMN">Oman</option>
-                                                <option value="PAK">Pakistan</option>
-                                                <option value="PLW">Palau</option>
-                                                <option value="PSE">Palestinian Territory, Occupied</option>
-                                                <option value="PAN">Panama</option>
-                                                <option value="PNG">Papua New Guinea</option>
-                                                <option value="PRY">Paraguay</option>
-                                                <option value="PER">Peru</option>
-                                                <option value="PHL">Philippines</option>
-                                                <option value="PCN">Pitcairn</option>
-                                                <option value="POL">Poland</option>
-                                                <option value="PRT">Portugal</option>
-                                                <option value="PRI">Puerto Rico</option>
-                                                <option value="QAT">Qatar</option>
-                                                <option value="REU">Réunion</option>
-                                                <option value="ROU">Romania</option>
-                                                <option value="RUS">Russian Federation</option>
-                                                <option value="RWA">Rwanda</option>
-                                                <option value="BLM">Saint Barthélemy</option>
-                                                <option value="SHN">Saint Helena, Ascension and Tristan da Cunha
-                                                </option>
-                                                <option value="KNA">Saint Kitts and Nevis</option>
-                                                <option value="LCA">Saint Lucia</option>
-                                                <option value="MAF">Saint Martin (French part)</option>
-                                                <option value="SPM">Saint Pierre and Miquelon</option>
-                                                <option value="VCT">Saint Vincent and the Grenadines</option>
-                                                <option value="WSM">Samoa</option>
-                                                <option value="SMR">San Marino</option>
-                                                <option value="STP">Sao Tome and Principe</option>
-                                                <option value="SAU">Saudi Arabia</option>
-                                                <option value="SEN">Senegal</option>
-                                                <option value="SRB">Serbia</option>
-                                                <option value="SYC">Seychelles</option>
-                                                <option value="SLE">Sierra Leone</option>
-                                                <option value="SGP">Singapore</option>
-                                                <option value="SXM">Sint Maarten (Dutch part)</option>
-                                                <option value="SVK">Slovakia</option>
-                                                <option value="SVN">Slovenia</option>
-                                                <option value="SLB">Solomon Islands</option>
-                                                <option value="SOM">Somalia</option>
-                                                <option value="ZAF">South Africa</option>
-                                                <option value="SGS">South Georgia and the South Sandwich Islands
-                                                </option>
-                                                <option value="SSD">South Sudan</option>
-                                                <option value="ESP">Spain</option>
-                                                <option value="LKA">Sri Lanka</option>
-                                                <option value="SDN">Sudan</option>
-                                                <option value="SUR">Suriname</option>
-                                                <option value="SJM">Svalbard and Jan Mayen</option>
-                                                <option value="SWZ">Swaziland</option>
-                                                <option value="SWE">Sweden</option>
-                                                <option value="CHE">Switzerland</option>
-                                                <option value="SYR">Syrian Arab Republic</option>
-                                                <option value="TWN">Taiwan, Province of China</option>
-                                                <option value="TJK">Tajikistan</option>
-                                                <option value="TZA">Tanzania, United Republic of</option>
-                                                <option value="THA">Thailand</option>
-                                                <option value="TLS">Timor-Leste</option>
-                                                <option value="TGO">Togo</option>
-                                                <option value="TKL">Tokelau</option>
-                                                <option value="TON">Tonga</option>
-                                                <option value="TTO">Trinidad and Tobago</option>
-                                                <option value="TUN">Tunisia</option>
-                                                <option value="TUR">Turkey</option>
-                                                <option value="TKM">Turkmenistan</option>
-                                                <option value="TCA">Turks and Caicos Islands</option>
-                                                <option value="TUV">Tuvalu</option>
-                                                <option value="UGA">Uganda</option>
-                                                <option value="UKR">Ukraine</option>
-                                                <option value="ARE">United Arab Emirates</option>
-                                                <option value="GBR">United Kingdom</option>
-                                                <option value="USA">United States</option>
-                                                <option value="UMI">United States Minor Outlying Islands</option>
-                                                <option value="URY">Uruguay</option>
-                                                <option value="UZB">Uzbekistan</option>
-                                                <option value="VUT">Vanuatu</option>
-                                                <option value="VEN">Venezuela, Bolivarian Republic of</option>
-                                                <option value="VNM">Viet Nam</option>
-                                                <option value="VGB">Virgin Islands, British</option>
-                                                <option value="VIR">Virgin Islands, U.S.</option>
-                                                <option value="WLF">Wallis and Futuna</option>
-                                                <option value="ESH">Western Sahara</option>
-                                                <option value="YEM">Yemen</option>
-                                                <option value="ZMB">Zambia</option>
-                                                <option value="ZWE">Zimbabwe</option>
-                                            </select>
-                                            <input type="text" name="companyname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-name" id="name" aria-required="true" aria-invalid="false" placeholder="Your Company Name">
-                                            <select class="wpcf7-form-control col-6 wpcf7-text wpcf7-validates-as-required form-control form-name" name="industry" required="">
-                                                <option disabled="" selected="">Select Your Industry*</option>
-                                                <option value="Energy - Oil &amp; Gas, Oil Field Services &amp; Renewables">Energy - Oil &amp; Gas, Oil Field Services &amp; Renewables</option>
-                                                <option value="Clothing / Apparel / Fashion">Clothing / Apparel / Fashion</option>
-                                                <option value="Education">Education</option>
-                                                <option value="Food &amp; Beverages">Food &amp; Beverages</option>
-                                                <option value="Government">Government</option>
-                                                <option value="Healthcare">Healthcare</option>
-                                                <option value="High Tech">High Tech</option>
-                                                <option value="Insurance">Insurance</option>
-                                                <option value="Life Sciences">Life Sciences</option>
-                                                <option value="Manufacturing">Manufacturing</option>
-                                                <option value="Media &amp; Information Services">Media &amp; Information Services</option>
-                                                <option value="Resources - Metals, Mining &amp; Construction">Resources - Metals, Mining &amp; Construction</option>
-                                                <option value="Retail">Retail</option>
-                                                <option value="Consumer Packaged Goods">Consumer Packaged Goods</option>
-                                                <option value="Technology Business Unit">Technology Business Unit</option>
-                                                <option value="Telecom">Telecom</option>
-                                                <option value="Travel, Transportation &amp; Hospitality">Travel, Transportation &amp; Hospitality</option>
-                                                <option value="Utilities">Utilities</option>
-                                                <option value="Other">Other</option>
-                                            </select>
-                                            <select class="wpcf7-form-control col-6 wpcf7-text wpcf7-validates-as-required form-control form-name" name="service" required="">
-                                                <option disabled="" selected="">Select Your Service*</option>
-                                                <option value="Website/Web App Development">Website/Web App Development</option>
-                                                <option value="Ecommerce Solution">Ecommerce Solution</option>
-                                                <option value="Business Automation/ERP">Business Automation/ERP</option>
-                                                <option value="Outsourced Product Development">Outsourced Product Development</option>
-                                                <option value="Mobile App Solutions">Mobile App Solutions</option>
-                                                <option value="Digital Marketing">Digital Marketing</option>
-                                                <option value="Others">Others</option>
-                                            </select>
-                                            <textarea class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-name" placeholder="How can we help you?" name="message"></textarea>
-                                            <div class="g-recaptcha brochure__form__captcha" data-sitekey="6Les_d4ZAAAAADuycC7pCedOh7EWtXDw_UIa5eCK"></div>
-                                            <input type="submit" class="border-button" value="Enquire Now">
-                                            
-                                            
-                                        </div>
-                       </form>
+                  <div class="col-md-4">
+                    <div class="box-left">
+                      <div class="section-heading">
+                        <p>
+                          We’re here to make an impact, for health technology,
+                          for our partners, and for our team.
+                        </p>
+                        <h3>Real talk, real impact</h3>
+                        <div class="stats-btn">
+                          <a href="#" class="btn">Let's Partner</a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="col-md-12 col-lg-6 footernew-top-right">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-3 col-3"><img src="https://www.webshark.in/img/newfooter/india-flag.jpg"></div>
-                                    <div class="col-md-8 col-8"><span class="country-name">India</span></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <span class="new-address">#42/3, 4B, 2nd Floor Near Kannakpura Main RD,
-                                        100FT, Outer Ring Rd, J. P. Nagar,
-                                        Bengaluru, Karnataka 560078.</span>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-3 col-3"><img src="https://www.webshark.in/img/newfooter/india-flag.jpg"></div>
-                                    <div class="col-md-8 col-8"><span class="country-name">India</span></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <span class="new-address">150, 1, Infantry Rd, opp. Commissioner Office, Vasanth Nagar, Mumbai, Maharashtra 400070      </span>
-                                    </div>
-                                    
-                                </div>
-                            </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="box-right d-flex">
+                      <!-- Column 1 -->
+                      <div class="colm">
+                        <div class="item-card">
+                          <div class="item-circle">
+                            <h3>12</h3>
+                          </div>
+                          <div class="item-text">
+                            <p>
+                              Real people — real lives — we have built products
+                              and solutions for.
+                            </p>
+                          </div>
                         </div>
-                        
-                        <div class="row pt-4">
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-3 col-3"><img src="https://www.webshark.in/img/newfooter/usa-flag.jpg"></div>
-                                    <div class="col-md-8 col-8"><span class="country-name">USA</span></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <span class="new-address">WeWork Coda<br>756 West Peachtree St NW Atlanta, GA 30308 United States</span>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-md-3 col-3"><img src="https://www.webshark.in/img/newfooter/uk-flag.jpg"></div>
-                                    <div class="col-md-8 col-8"><span class="country-name">UK</span></div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <span class="new-address">WeWork No 1 Poultry<br> 1 Poultry London, EC2R 8EJ United Kingdom</span>
-                                    </div>
-                                    
-                                </div>
-                            </div>
+                        <div class="item-card">
+                          <div class="item-circle">
+                            <h3>12</h3>
+                          </div>
+                          <div class="item-text">
+                            <p>
+                              Real people — real lives — we have built products
+                              and solutions for.
+                            </p>
+                          </div>
                         </div>
-      
-                        <div class="row footernew-top-p-1">
-                            <div class="col-md-6">
-                                <div class="new-phone">
-                                        <div>Sales Enquires</div><a href="mailto:sales@webshark.in"><span>sales@webshark.in</span></a>
-                                    </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="new-phone">
-                                        <div>General Enquires</div><a href="mailto:coffee@webshark.in"><span>coffee@webshark.in</span></a>
-                                    </div>
-                            </div>
+                        <div class="item-card">
+                          <div class="item-circle">
+                            <h3>12</h3>
+                          </div>
+                          <div class="item-text">
+                            <p>
+                              Real people — real lives — we have built products
+                              and solutions for.
+                            </p>
+                          </div>
                         </div>
-                         <div class="row footernew-top-p-2">
-                            <div class="col-md-6">
-                                <div class="new-phone">
-                                        <div>Phone Number</div><a href="tel:917620361284"><span>+(91) 76203 61284</span></a>
-                                    </div>
-                            </div>
-                            <div class="col-md-6" style="display: none;">
-                                <div class="new-phone us">
-                                        <div>USA Phone Number</div><span>+(91) 76203 61284</span>
-                                    </div>
-                            </div>
+                      </div>
+                      <!-- Column 2 -->
+                      <div class="colm">
+                        <div class="item-card">
+                          <div class="item-circle">
+                            <h3>20</h3>
+                          </div>
+                          <div class="item-text">
+                            <p>
+                              Real people — real lives — we have built products
+                              and solutions for.
+                            </p>
+                          </div>
                         </div>
-                         <div class="row footernew-top-p-3" style="display: none;">
-                            <div class="col-md-6">
-                                <div class="new-phone uk">
-                                        <div>UK Phone Number</div><span>+(91) 76203 61284</span>
-                                    </div>
-                            </div>
+                        <div class="item-card">
+                          <div class="item-circle">
+                            <h3>52</h3>
+                          </div>
+                          <div class="item-text">
+                            <p>
+                              Real people — real lives — we have built products
+                              and solutions for.
+                            </p>
+                          </div>
                         </div>
-                        
-                        
-                        
+                        <div class="item-card">
+                          <div class="item-circle">
+                            <h3>11</h3>
+                          </div>
+                          <div class="item-text">
+                            <p>
+                              Real people — real lives — we have built products
+                              and solutions for.
+                            </p>
+                          </div>
                         </div>
-      
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                
-                
+              </div>
             </div>
-                    
-      
-        </div>
-        <div class="container-fluid">
-           <div class="row moving-text">
-                     <marquee scrollamount="20">WEBSHARK  WEBSHARK  WEBSHARK WEBSHARK  WEBSHARK  WEBSHARK WEBSHARK  WEBSHARK  WEBSHARK WEBSHARK  WEBSHARK  WEBSHARK</marquee>
+          </section>
+          <!-- Clients -->
+          <section class="client-section">
+            <div class="container">
+              <div class="client-item-background">
+                <div class="section-title">
+                  <h2 class="">Trusted by 3,000+ companies</h2>
+                </div>
+                <div class="w-layout-grid grid-client">
+                  <div class="client-item client-divider-bottom">
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e099cb2c22455ad9fe_client-01.svg"
+                      loading="eager"
+                      alt=""
+                      class="client-image"
+                    />
+                  </div>
+                  <div class="client-divider"></div>
+                  <div class="client-item client-divider-bottom">
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e160d9158dfee47b1c_client-02.svg"
+                      loading="eager"
+                      alt=""
+                      class="client-image"
+                    />
+                  </div>
+                  <div class="client-divider"></div>
+                  <div class="client-item client-divider-bottom">
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e12d697c22f4e4b148_client-03.svg"
+                      loading="eager"
+                      alt=""
+                      class="client-image"
+                    />
+                  </div>
+                  <div class="client-divider"></div>
+                  <div class="client-item client-divider-bottom">
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/654475de0188162db6224bcb_client-04.svg"
+                      loading="eager"
+                      alt=""
+                      class="client-image"
+                    />
+                  </div>
+                  <div class="client-divider"></div>
+                  <div class="client-item client-divider-bottom">
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e1fa9c3abad04c5d25_client-05.svg"
+                      loading="eager"
+                      alt=""
+                      class="client-image"
+                    />
+                  </div>
+                  <div class="client-item">
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e25634a435d83f8303_client-06.svg"
+                      loading="eager"
+                      alt=""
+                      class="client-image"
+                    />
+                  </div>
+                  <div class="client-divider"></div>
+                  <div class="client-item">
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e260d9158dfee47bc2_client-07.svg"
+                      loading="eager"
+                      alt=""
+                      class="client-image"
+                    />
+                  </div>
+                  <div class="client-divider"></div>
+                  <div class="client-item">
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e346135bc56aa46c5c_client-08.svg"
+                      loading="eager"
+                      alt=""
+                      class="client-image"
+                    />
+                  </div>
+                  <div class="client-divider"></div>
+                  <div class="client-item">
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e2e67f3d8bb8acbc05_client-09.svg"
+                      loading="eager"
+                      alt=""
+                      class="client-image"
+                    />
+                  </div>
+                  <div class="client-divider"></div>
+                  <div class="client-item">
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e31b5b8c2eda464231_client-10.svg"
+                      loading="eager"
+                      alt=""
+                      class="client-image"
+                    />
+                  </div>
+                </div>
+                <div class="contact-detail-wrap">
+                  <h3 class="heading-h4">
+                    <strong>You can trust us for the next project</strong>
+                  </h3>
+                  <a
+                    data-w-id="212a96a3-589d-d685-7243-85059b933822"
+                    href="/contact-us"
+                    class="button-white-icon w-inline-block"
+                    ><img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/65180382905582d1320d372e_call.svg"
+                      loading="lazy"
+                      alt=""
+                      class="button-icon"
+                    />
+                    <div>Contact us now</div></a
+                  >
+                </div>
+                <img
+                  src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6518049d905582d1320dc79a_shape-08.svg"
+                  loading="eager"
+                  alt=""
+                  class="client-decoration-two"
+                /><img
+                  src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/652fb3567cb4ade03fd322d9_shape-09.svg"
+                  loading="eager"
+                  alt=""
+                  class="client-decoration-one"
+                />
+              </div>
             </div>
-        </div>
-        <div class="footer-middle">
-            <div class="row">
+          </section>
+          <!-- Life at Webshark -->
+          <section class="life-webshark-block">
+            <div class="container">
+              <div class="section-title text-center">
+                <h2>What Drives Us?</h2>
+                <p>
+                  Discover our unwavering dedication to integrity, a commitment
+                  that forms the cornerstone of our agency's operations and
+                  relationships.
+                </p>
+              </div>
+              <div class="row g-3">
+                <div class="col-md-3">
+                  <div class="img-box">
+                    <img src="./assets/img/about/gal-1.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="img-box">
+                    <img src="./assets/img/about/gal-2.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="./assets/img/about/gal-3.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="./assets/img/about/gal-4.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="img-box">
+                    <img src="./assets/img/about/gal-5.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="img-box">
+                    <img src="./assets/img/about/gal-6.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="img-box">
+                    <img src="./assets/img/about/gal-7.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="img-box">
+                    <img src="./assets/img/about/gal-8.jpg" alt="" />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="./assets/img/about/gal-9.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Testimonial Slider -->
+          <section class="testimonial-slider">
+            <div class="container">
+              <div class="section-title mx-0">
+                <h2>What our client say</h2>
+              </div>
+            </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item">
+                    <p>
+                      Mention its pros and cons, usability, effectiveness, or
+                      any standout features that impressed you. Be honest and
+                      provide specific examples to support your evaluation. Feel
+                      free to compare it to other similar products or services
+                      you have used.
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Allen Smith</h3>
+                      <div class="text-small">CEO of a blogzine</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd246135bc56a9532d5_testimonial-02.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item top-margin">
+                    <p>
+                      Be genuine in your assessment, and provide constructive
+                      feedback to benefit both potential customers and the
+                      company providing the product or service.
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Louis Ferguson</h3>
+                      <div class="text-small">UI / UX designer</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd28d04ec5f1af9d1e5_testimonial-03.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item">
+                    <p>
+                      Remember, a helpful and informative user review provides
+                      meaningful insights and helps others make informed
+                      decisions. Be genuine in your assessment, and provide
+                      constructive feedback to benefit both potential customers
+                      and the company providing the product or service.
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Jacqueline Miller</h3>
+                      <div class="text-small">CEO of an eduport</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd2b4022cb4576cb336_testimonial-01.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item top-margin">
+                    <p>
+                      Summarize your overall experience and whether you would
+                      recommend the product or service to others.
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Frances Guerrero</h3>
+                      <div class="text-small">UI / UX designer</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd2b4022cb4576cb330_testimonial-04.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item">
+                    <p>
+                      Remember that the project title should reflect the
+                      agency's expertise, the project's goals, and the unique
+                      value it brings to the table. Tailor the title to make it
+                      engaging, memorable, and aligned with the agency's brand
+                      identity
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Samuel Bishop</h3>
+                      <div class="text-small">Software Developer</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd299cb2c22454bffd5_testimonial-05.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item top-margin">
+                    <p>
+                      Working with this agency was an absolute pleasure. Their
+                      creativity and innovation brought our vision to life in
+                      ways we hadn't imagined. Truly outstanding.
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Amanda Reed</h3>
+                      <div class="text-small">Incredible Creativity</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd26b62a93ee812de9d_testimonial-06.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item top-margin">
+                    <p>
+                      Be genuine in your assessment, and provide constructive
+                      feedback to benefit both potential customers and the
+                      company providing the product or service.
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Louis Ferguson</h3>
+                      <div class="text-small">UI / UX designer</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd28d04ec5f1af9d1e5_testimonial-03.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item">
+                    <p>
+                      Remember, a helpful and informative user review provides
+                      meaningful insights and helps others make informed
+                      decisions. Be genuine in your assessment, and provide
+                      constructive feedback to benefit both potential customers
+                      and the company providing the product or service.
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Jacqueline Miller</h3>
+                      <div class="text-small">CEO of an eduport</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd2b4022cb4576cb336_testimonial-01.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item top-margin">
+                    <p>
+                      Summarize your overall experience and whether you would
+                      recommend the product or service to others.
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Frances Guerrero</h3>
+                      <div class="text-small">UI / UX designer</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd2b4022cb4576cb330_testimonial-04.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item">
+                    <p>
+                      Remember that the project title should reflect the
+                      agency's expertise, the project's goals, and the unique
+                      value it brings to the table. Tailor the title to make it
+                      engaging, memorable, and aligned with the agency's brand
+                      identity
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Samuel Bishop</h3>
+                      <div class="text-small">Software Developer</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd299cb2c22454bffd5_testimonial-05.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item top-margin">
+                    <p>
+                      Working with this agency was an absolute pleasure. Their
+                      creativity and innovation brought our vision to life in
+                      ways we hadn't imagined. Truly outstanding.
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Amanda Reed</h3>
+                      <div class="text-small">Incredible Creativity</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd26b62a93ee812de9d_testimonial-06.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item">
+                    <p>
+                      Mention its pros and cons, usability, effectiveness, or
+                      any standout features that impressed you. Be honest and
+                      provide specific examples to support your evaluation. Feel
+                      free to compare it to other similar products or services
+                      you have used.
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Allen Smith</h3>
+                      <div class="text-small">CEO of a blogzine</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd246135bc56a9532d5_testimonial-02.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item top-margin">
+                    <p>
+                      Be genuine in your assessment, and provide constructive
+                      feedback to benefit both potential customers and the
+                      company providing the product or service.
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Louis Ferguson</h3>
+                      <div class="text-small">UI / UX designer</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd28d04ec5f1af9d1e5_testimonial-03.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item">
+                    <p>
+                      Remember, a helpful and informative user review provides
+                      meaningful insights and helps others make informed
+                      decisions. Be genuine in your assessment, and provide
+                      constructive feedback to benefit both potential customers
+                      and the company providing the product or service.
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Jacqueline Miller</h3>
+                      <div class="text-small">CEO of an eduport</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd2b4022cb4576cb336_testimonial-01.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item top-margin">
+                    <p>
+                      Summarize your overall experience and whether you would
+                      recommend the product or service to others.
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Frances Guerrero</h3>
+                      <div class="text-small">UI / UX designer</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd2b4022cb4576cb330_testimonial-04.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item">
+                    <p>
+                      Remember that the project title should reflect the
+                      agency's expertise, the project's goals, and the unique
+                      value it brings to the table. Tailor the title to make it
+                      engaging, memorable, and aligned with the agency's brand
+                      identity
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Samuel Bishop</h3>
+                      <div class="text-small">Software Developer</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd299cb2c22454bffd5_testimonial-05.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial-marquee-item top-margin">
+                    <p>
+                      Working with this agency was an absolute pleasure. Their
+                      creativity and innovation brought our vision to life in
+                      ways we hadn't imagined. Truly outstanding.
+                    </p>
+                    <div>
+                      <h3 class="testimonial-title">Amanda Reed</h3>
+                      <div class="text-small">Incredible Creativity</div>
+                    </div>
+                    <div class="testimonial-image-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517ebd26b62a93ee812de9d_testimonial-06.jpg"
+                        loading="lazy"
+                        alt=""
+                        class="testimonial-image"
+                      />
+                    </div>
+                    <img
+                      src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6517eef0905582d132ff4f9d_shape-07.svg"
+                      loading="lazy"
+                      alt=""
+                      class="shape-decoration-four"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Get in Touch Section -->
+          <section class="get-in-touch">
+            <div class="swiper mySwiper3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="#" class="footer-marquee-item">
+                    <h6 class="marquee-title">Reach Us Here</h6>
+                    <div class="marquee-arrow-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6513d0ff3764e81eba5ce6ae_arrow-01.svg"
+                        loading="lazy"
+                        alt=""
+                        class="marquee-arrow-icon"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="footer-marquee-item">
+                    <h6 class="marquee-title">Get In Touch</h6>
+                    <div class="marquee-arrow-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6513d0ff3764e81eba5ce6ae_arrow-01.svg"
+                        loading="lazy"
+                        alt=""
+                        class="marquee-arrow-icon"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="footer-marquee-item">
+                    <h6 class="marquee-title">Ask A Question</h6>
+                    <div class="marquee-arrow-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6513d0ff3764e81eba5ce6ae_arrow-01.svg"
+                        loading="lazy"
+                        alt=""
+                        class="marquee-arrow-icon"
+                      />
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="#" class="footer-marquee-item">
+                    <h6 class="marquee-title">Talk To Us</h6>
+                    <div class="marquee-arrow-wrap">
+                      <img
+                        src="https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/6513d0ff3764e81eba5ce6ae_arrow-01.svg"
+                        loading="lazy"
+                        alt=""
+                        class="marquee-arrow-icon"
+                      />
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Footer -->
+          <footer id="tw-footer" class="tw-footer footer-top-space">
+            <div class="footer-top">
+              <div class="container-fluid mainnewfooter">
+                <div class="row">
+                  <div class="col-md-12 col-lg-6 footernew-top">
+                    <form
+                      action="../footerformsubmit.php"
+                      method="post"
+                      class="econtact-form"
+                    >
+                      <div class="form-group row">
+                        <h5 class="newform-heading">
+                          Share Your Project Details
+                        </h5>
+                        <input
+                          type="text"
+                          name="name"
+                          value=""
+                          size="40"
+                          class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-name"
+                          id="name"
+                          aria-required="true"
+                          aria-invalid="false"
+                          placeholder="Your Name"
+                          required=""
+                        />
+                        <input
+                          type="email"
+                          name="email"
+                          value=""
+                          class="wpcf7-form-control col-6 r-padding wpcf7-text wpcf7-validates-as-required form-control form-name"
+                          id="name"
+                          aria-required="true"
+                          aria-invalid="false"
+                          placeholder="Your Email"
+                          required=""
+                        />
+                        <input
+                          type="text"
+                          name="phone"
+                          value=""
+                          class="wpcf7-form-control col-6 wpcf7-text wpcf7-validates-as-required form-control form-name"
+                          id="name"
+                          aria-required="true"
+                          pattern="^([0|\+[0-9]{1,5})?([0-9]{10})$"
+                          title="Please Enter Correct Phone Number"
+                          aria-invalid="false"
+                          placeholder="Your Phone Number"
+                          required=""
+                        />
+                        <select
+                          class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-name"
+                          name="country"
+                          required=""
+                        >
+                          <option disabled="" selected="">
+                            Select Your Country*
+                          </option>
+                          <option value="AFG">Afghanistan</option>
+                          <option value="ALA">Åland Islands</option>
+                          <option value="ALB">Albania</option>
+                          <option value="DZA">Algeria</option>
+                          <option value="ASM">American Samoa</option>
+                          <option value="AND">Andorra</option>
+                          <option value="AGO">Angola</option>
+                          <option value="AIA">Anguilla</option>
+                          <option value="ATA">Antarctica</option>
+                          <option value="ATG">Antigua and Barbuda</option>
+                          <option value="ARG">Argentina</option>
+                          <option value="ARM">Armenia</option>
+                          <option value="ABW">Aruba</option>
+                          <option value="AUS">Australia</option>
+                          <option value="AUT">Austria</option>
+                          <option value="AZE">Azerbaijan</option>
+                          <option value="BHS">Bahamas</option>
+                          <option value="BHR">Bahrain</option>
+                          <option value="BGD">Bangladesh</option>
+                          <option value="BRB">Barbados</option>
+                          <option value="BLR">Belarus</option>
+                          <option value="BEL">Belgium</option>
+                          <option value="BLZ">Belize</option>
+                          <option value="BEN">Benin</option>
+                          <option value="BMU">Bermuda</option>
+                          <option value="BTN">Bhutan</option>
+                          <option value="BOL">
+                            Bolivia, Plurinational State of
+                          </option>
+                          <option value="BES">
+                            Bonaire, Sint Eustatius and Saba
+                          </option>
+                          <option value="BIH">Bosnia and Herzegovina</option>
+                          <option value="BWA">Botswana</option>
+                          <option value="BVT">Bouvet Island</option>
+                          <option value="BRA">Brazil</option>
+                          <option value="IOT">
+                            British Indian Ocean Territory
+                          </option>
+                          <option value="BRN">Brunei Darussalam</option>
+                          <option value="BGR">Bulgaria</option>
+                          <option value="BFA">Burkina Faso</option>
+                          <option value="BDI">Burundi</option>
+                          <option value="KHM">Cambodia</option>
+                          <option value="CMR">Cameroon</option>
+                          <option value="CAN">Canada</option>
+                          <option value="CPV">Cape Verde</option>
+                          <option value="CYM">Cayman Islands</option>
+                          <option value="CAF">Central African Republic</option>
+                          <option value="TCD">Chad</option>
+                          <option value="CHL">Chile</option>
+                          <option value="CHN">China</option>
+                          <option value="CXR">Christmas Island</option>
+                          <option value="CCK">Cocos (Keeling) Islands</option>
+                          <option value="COL">Colombia</option>
+                          <option value="COM">Comoros</option>
+                          <option value="COG">Congo</option>
+                          <option value="COD">
+                            Congo, the Democratic Republic of the
+                          </option>
+                          <option value="COK">Cook Islands</option>
+                          <option value="CRI">Costa Rica</option>
+                          <option value="CIV">Côte d'Ivoire</option>
+                          <option value="HRV">Croatia</option>
+                          <option value="CUB">Cuba</option>
+                          <option value="CUW">Curaçao</option>
+                          <option value="CYP">Cyprus</option>
+                          <option value="CZE">Czech Republic</option>
+                          <option value="DNK">Denmark</option>
+                          <option value="DJI">Djibouti</option>
+                          <option value="DMA">Dominica</option>
+                          <option value="DOM">Dominican Republic</option>
+                          <option value="ECU">Ecuador</option>
+                          <option value="EGY">Egypt</option>
+                          <option value="SLV">El Salvador</option>
+                          <option value="GNQ">Equatorial Guinea</option>
+                          <option value="ERI">Eritrea</option>
+                          <option value="EST">Estonia</option>
+                          <option value="ETH">Ethiopia</option>
+                          <option value="FLK">
+                            Falkland Islands (Malvinas)
+                          </option>
+                          <option value="FRO">Faroe Islands</option>
+                          <option value="FJI">Fiji</option>
+                          <option value="FIN">Finland</option>
+                          <option value="FRA">France</option>
+                          <option value="GUF">French Guiana</option>
+                          <option value="PYF">French Polynesia</option>
+                          <option value="ATF">
+                            French Southern Territories
+                          </option>
+                          <option value="GAB">Gabon</option>
+                          <option value="GMB">Gambia</option>
+                          <option value="GEO">Georgia</option>
+                          <option value="DEU">Germany</option>
+                          <option value="GHA">Ghana</option>
+                          <option value="GIB">Gibraltar</option>
+                          <option value="GRC">Greece</option>
+                          <option value="GRL">Greenland</option>
+                          <option value="GRD">Grenada</option>
+                          <option value="GLP">Guadeloupe</option>
+                          <option value="GUM">Guam</option>
+                          <option value="GTM">Guatemala</option>
+                          <option value="GGY">Guernsey</option>
+                          <option value="GIN">Guinea</option>
+                          <option value="GNB">Guinea-Bissau</option>
+                          <option value="GUY">Guyana</option>
+                          <option value="HTI">Haiti</option>
+                          <option value="HMD">
+                            Heard Island and McDonald Islands
+                          </option>
+                          <option value="VAT">
+                            Holy See (Vatican City State)
+                          </option>
+                          <option value="HND">Honduras</option>
+                          <option value="HKG">Hong Kong</option>
+                          <option value="HUN">Hungary</option>
+                          <option value="ISL">Iceland</option>
+                          <option value="IND" selected="selected">India</option>
+                          <option value="IDN">Indonesia</option>
+                          <option value="IRN">Iran, Islamic Republic of</option>
+                          <option value="IRQ">Iraq</option>
+                          <option value="IRL">Ireland</option>
+                          <option value="IMN">Isle of Man</option>
+                          <option value="ISR">Israel</option>
+                          <option value="ITA">Italy</option>
+                          <option value="JAM">Jamaica</option>
+                          <option value="JPN">Japan</option>
+                          <option value="JEY">Jersey</option>
+                          <option value="JOR">Jordan</option>
+                          <option value="KAZ">Kazakhstan</option>
+                          <option value="KEN">Kenya</option>
+                          <option value="KIR">Kiribati</option>
+                          <option value="PRK">
+                            Korea, Democratic People's Republic of
+                          </option>
+                          <option value="KOR">Korea, Republic of</option>
+                          <option value="KWT">Kuwait</option>
+                          <option value="KGZ">Kyrgyzstan</option>
+                          <option value="LAO">
+                            Lao People's Democratic Republic
+                          </option>
+                          <option value="LVA">Latvia</option>
+                          <option value="LBN">Lebanon</option>
+                          <option value="LSO">Lesotho</option>
+                          <option value="LBR">Liberia</option>
+                          <option value="LBY">Libya</option>
+                          <option value="LIE">Liechtenstein</option>
+                          <option value="LTU">Lithuania</option>
+                          <option value="LUX">Luxembourg</option>
+                          <option value="MAC">Macao</option>
+                          <option value="MKD">
+                            Macedonia, the former Yugoslav Republic of
+                          </option>
+                          <option value="MDG">Madagascar</option>
+                          <option value="MWI">Malawi</option>
+                          <option value="MYS">Malaysia</option>
+                          <option value="MDV">Maldives</option>
+                          <option value="MLI">Mali</option>
+                          <option value="MLT">Malta</option>
+                          <option value="MHL">Marshall Islands</option>
+                          <option value="MTQ">Martinique</option>
+                          <option value="MRT">Mauritania</option>
+                          <option value="MUS">Mauritius</option>
+                          <option value="MYT">Mayotte</option>
+                          <option value="MEX">Mexico</option>
+                          <option value="FSM">
+                            Micronesia, Federated States of
+                          </option>
+                          <option value="MDA">Moldova, Republic of</option>
+                          <option value="MCO">Monaco</option>
+                          <option value="MNG">Mongolia</option>
+                          <option value="MNE">Montenegro</option>
+                          <option value="MSR">Montserrat</option>
+                          <option value="MAR">Morocco</option>
+                          <option value="MOZ">Mozambique</option>
+                          <option value="MMR">Myanmar</option>
+                          <option value="NAM">Namibia</option>
+                          <option value="NRU">Nauru</option>
+                          <option value="NPL">Nepal</option>
+                          <option value="NLD">Netherlands</option>
+                          <option value="NCL">New Caledonia</option>
+                          <option value="NZL">New Zealand</option>
+                          <option value="NIC">Nicaragua</option>
+                          <option value="NER">Niger</option>
+                          <option value="NGA">Nigeria</option>
+                          <option value="NIU">Niue</option>
+                          <option value="NFK">Norfolk Island</option>
+                          <option value="MNP">Northern Mariana Islands</option>
+                          <option value="NOR">Norway</option>
+                          <option value="OMN">Oman</option>
+                          <option value="PAK">Pakistan</option>
+                          <option value="PLW">Palau</option>
+                          <option value="PSE">
+                            Palestinian Territory, Occupied
+                          </option>
+                          <option value="PAN">Panama</option>
+                          <option value="PNG">Papua New Guinea</option>
+                          <option value="PRY">Paraguay</option>
+                          <option value="PER">Peru</option>
+                          <option value="PHL">Philippines</option>
+                          <option value="PCN">Pitcairn</option>
+                          <option value="POL">Poland</option>
+                          <option value="PRT">Portugal</option>
+                          <option value="PRI">Puerto Rico</option>
+                          <option value="QAT">Qatar</option>
+                          <option value="REU">Réunion</option>
+                          <option value="ROU">Romania</option>
+                          <option value="RUS">Russian Federation</option>
+                          <option value="RWA">Rwanda</option>
+                          <option value="BLM">Saint Barthélemy</option>
+                          <option value="SHN">
+                            Saint Helena, Ascension and Tristan da Cunha
+                          </option>
+                          <option value="KNA">Saint Kitts and Nevis</option>
+                          <option value="LCA">Saint Lucia</option>
+                          <option value="MAF">
+                            Saint Martin (French part)
+                          </option>
+                          <option value="SPM">Saint Pierre and Miquelon</option>
+                          <option value="VCT">
+                            Saint Vincent and the Grenadines
+                          </option>
+                          <option value="WSM">Samoa</option>
+                          <option value="SMR">San Marino</option>
+                          <option value="STP">Sao Tome and Principe</option>
+                          <option value="SAU">Saudi Arabia</option>
+                          <option value="SEN">Senegal</option>
+                          <option value="SRB">Serbia</option>
+                          <option value="SYC">Seychelles</option>
+                          <option value="SLE">Sierra Leone</option>
+                          <option value="SGP">Singapore</option>
+                          <option value="SXM">Sint Maarten (Dutch part)</option>
+                          <option value="SVK">Slovakia</option>
+                          <option value="SVN">Slovenia</option>
+                          <option value="SLB">Solomon Islands</option>
+                          <option value="SOM">Somalia</option>
+                          <option value="ZAF">South Africa</option>
+                          <option value="SGS">
+                            South Georgia and the South Sandwich Islands
+                          </option>
+                          <option value="SSD">South Sudan</option>
+                          <option value="ESP">Spain</option>
+                          <option value="LKA">Sri Lanka</option>
+                          <option value="SDN">Sudan</option>
+                          <option value="SUR">Suriname</option>
+                          <option value="SJM">Svalbard and Jan Mayen</option>
+                          <option value="SWZ">Swaziland</option>
+                          <option value="SWE">Sweden</option>
+                          <option value="CHE">Switzerland</option>
+                          <option value="SYR">Syrian Arab Republic</option>
+                          <option value="TWN">Taiwan, Province of China</option>
+                          <option value="TJK">Tajikistan</option>
+                          <option value="TZA">
+                            Tanzania, United Republic of
+                          </option>
+                          <option value="THA">Thailand</option>
+                          <option value="TLS">Timor-Leste</option>
+                          <option value="TGO">Togo</option>
+                          <option value="TKL">Tokelau</option>
+                          <option value="TON">Tonga</option>
+                          <option value="TTO">Trinidad and Tobago</option>
+                          <option value="TUN">Tunisia</option>
+                          <option value="TUR">Turkey</option>
+                          <option value="TKM">Turkmenistan</option>
+                          <option value="TCA">Turks and Caicos Islands</option>
+                          <option value="TUV">Tuvalu</option>
+                          <option value="UGA">Uganda</option>
+                          <option value="UKR">Ukraine</option>
+                          <option value="ARE">United Arab Emirates</option>
+                          <option value="GBR">United Kingdom</option>
+                          <option value="USA">United States</option>
+                          <option value="UMI">
+                            United States Minor Outlying Islands
+                          </option>
+                          <option value="URY">Uruguay</option>
+                          <option value="UZB">Uzbekistan</option>
+                          <option value="VUT">Vanuatu</option>
+                          <option value="VEN">
+                            Venezuela, Bolivarian Republic of
+                          </option>
+                          <option value="VNM">Viet Nam</option>
+                          <option value="VGB">Virgin Islands, British</option>
+                          <option value="VIR">Virgin Islands, U.S.</option>
+                          <option value="WLF">Wallis and Futuna</option>
+                          <option value="ESH">Western Sahara</option>
+                          <option value="YEM">Yemen</option>
+                          <option value="ZMB">Zambia</option>
+                          <option value="ZWE">Zimbabwe</option>
+                        </select>
+                        <input
+                          type="text"
+                          name="companyname"
+                          value=""
+                          size="40"
+                          class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-name"
+                          id="name"
+                          aria-required="true"
+                          aria-invalid="false"
+                          placeholder="Your Company Name"
+                        />
+                        <select
+                          class="wpcf7-form-control col-6 wpcf7-text wpcf7-validates-as-required form-control form-name"
+                          name="industry"
+                          required=""
+                        >
+                          <option disabled="" selected="">
+                            Select Your Industry*
+                          </option>
+                          <option
+                            value="Energy - Oil &amp; Gas, Oil Field Services &amp; Renewables"
+                          >
+                            Energy - Oil &amp; Gas, Oil Field Services &amp;
+                            Renewables
+                          </option>
+                          <option value="Clothing / Apparel / Fashion">
+                            Clothing / Apparel / Fashion
+                          </option>
+                          <option value="Education">Education</option>
+                          <option value="Food &amp; Beverages">
+                            Food &amp; Beverages
+                          </option>
+                          <option value="Government">Government</option>
+                          <option value="Healthcare">Healthcare</option>
+                          <option value="High Tech">High Tech</option>
+                          <option value="Insurance">Insurance</option>
+                          <option value="Life Sciences">Life Sciences</option>
+                          <option value="Manufacturing">Manufacturing</option>
+                          <option value="Media &amp; Information Services">
+                            Media &amp; Information Services
+                          </option>
+                          <option
+                            value="Resources - Metals, Mining &amp; Construction"
+                          >
+                            Resources - Metals, Mining &amp; Construction
+                          </option>
+                          <option value="Retail">Retail</option>
+                          <option value="Consumer Packaged Goods">
+                            Consumer Packaged Goods
+                          </option>
+                          <option value="Technology Business Unit">
+                            Technology Business Unit
+                          </option>
+                          <option value="Telecom">Telecom</option>
+                          <option
+                            value="Travel, Transportation &amp; Hospitality"
+                          >
+                            Travel, Transportation &amp; Hospitality
+                          </option>
+                          <option value="Utilities">Utilities</option>
+                          <option value="Other">Other</option>
+                        </select>
+                        <select
+                          class="wpcf7-form-control col-6 wpcf7-text wpcf7-validates-as-required form-control form-name"
+                          name="service"
+                          required=""
+                        >
+                          <option disabled="" selected="">
+                            Select Your Service*
+                          </option>
+                          <option value="Website/Web App Development">
+                            Website/Web App Development
+                          </option>
+                          <option value="Ecommerce Solution">
+                            Ecommerce Solution
+                          </option>
+                          <option value="Business Automation/ERP">
+                            Business Automation/ERP
+                          </option>
+                          <option value="Outsourced Product Development">
+                            Outsourced Product Development
+                          </option>
+                          <option value="Mobile App Solutions">
+                            Mobile App Solutions
+                          </option>
+                          <option value="Digital Marketing">
+                            Digital Marketing
+                          </option>
+                          <option value="Others">Others</option>
+                        </select>
+                        <textarea
+                          class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control form-name"
+                          placeholder="How can we help you?"
+                          name="message"
+                        ></textarea>
+                        <div
+                          class="g-recaptcha brochure__form__captcha"
+                          data-sitekey="6Les_d4ZAAAAADuycC7pCedOh7EWtXDw_UIa5eCK"
+                        ></div>
+                        <input
+                          type="submit"
+                          class="border-button"
+                          value="Enquire Now"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-12 col-lg-6 footernew-top-right">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="row">
+                          <div class="col-md-3 col-3">
+                            <img
+                              src="https://www.webshark.in/img/newfooter/india-flag.jpg"
+                            />
+                          </div>
+                          <div class="col-md-8 col-8">
+                            <span class="country-name">India</span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <span class="new-address"
+                              >#42/3, 4B, 2nd Floor Near Kannakpura Main RD,
+                              100FT, Outer Ring Rd, J. P. Nagar, Bengaluru,
+                              Karnataka 560078.</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="row">
+                          <div class="col-md-3 col-3">
+                            <img
+                              src="https://www.webshark.in/img/newfooter/india-flag.jpg"
+                            />
+                          </div>
+                          <div class="col-md-8 col-8">
+                            <span class="country-name">India</span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <span class="new-address"
+                              >150, 1, Infantry Rd, opp. Commissioner Office,
+                              Vasanth Nagar, Mumbai, Maharashtra 400070
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row pt-4">
+                      <div class="col-md-6">
+                        <div class="row">
+                          <div class="col-md-3 col-3">
+                            <img
+                              src="https://www.webshark.in/img/newfooter/usa-flag.jpg"
+                            />
+                          </div>
+                          <div class="col-md-8 col-8">
+                            <span class="country-name">USA</span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <span class="new-address"
+                              >WeWork Coda<br />756 West Peachtree St NW
+                              Atlanta, GA 30308 United States</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="row">
+                          <div class="col-md-3 col-3">
+                            <img
+                              src="https://www.webshark.in/img/newfooter/uk-flag.jpg"
+                            />
+                          </div>
+                          <div class="col-md-8 col-8">
+                            <span class="country-name">UK</span>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <span class="new-address"
+                              >WeWork No 1 Poultry<br />
+                              1 Poultry London, EC2R 8EJ United Kingdom</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row footernew-top-p-1">
+                      <div class="col-md-6">
+                        <div class="new-phone">
+                          <div>Sales Enquires</div>
+                          <a href="mailto:sales@webshark.in"
+                            ><span>sales@webshark.in</span></a
+                          >
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="new-phone">
+                          <div>General Enquires</div>
+                          <a href="mailto:coffee@webshark.in"
+                            ><span>coffee@webshark.in</span></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row footernew-top-p-2">
+                      <div class="col-md-6">
+                        <div class="new-phone">
+                          <div>Phone Number</div>
+                          <a href="tel:917620361284"
+                            ><span>+(91) 76203 61284</span></a
+                          >
+                        </div>
+                      </div>
+                      <div class="col-md-6" style="display: none">
+                        <div class="new-phone us">
+                          <div>USA Phone Number</div>
+                          <span>+(91) 76203 61284</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row footernew-top-p-3" style="display: none">
+                      <div class="col-md-6">
+                        <div class="new-phone uk">
+                          <div>UK Phone Number</div>
+                          <span>+(91) 76203 61284</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+              <div class="row moving-text">
+                <marquee scrollamount="20"
+                  >WEBSHARK WEBSHARK WEBSHARK WEBSHARK WEBSHARK WEBSHARK
+                  WEBSHARK WEBSHARK WEBSHARK WEBSHARK WEBSHARK WEBSHARK</marquee
+                >
+              </div>
+            </div>
+            <div class="footer-middle">
+              <div class="row">
                 <div class="col-md-4 main-footer-left">
-                    <div><img src="https://webshark.b-cdn.net/img/webshark_new_logo.webp" width="60%" class="fflogo" /></div>
-                    <p>Over the years of experience , we gained reputation in Web Design services, eCommerce websites, Customized web development services, Digital Marketing services. We take pride in delivering more than 1200+ projects till date.</p>
+                  <div>
+                    <img
+                      src="https://webshark.b-cdn.net/img/webshark_new_logo.webp"
+                      width="60%"
+                      class="fflogo"
+                    />
+                  </div>
+                  <p>
+                    Over the years of experience , we gained reputation in Web
+                    Design services, eCommerce websites, Customized web
+                    development services, Digital Marketing services. We take
+                    pride in delivering more than 1200+ projects till date.
+                  </p>
                 </div>
                 <div class="col-md-3 first-links">
-                    <div class="footer-head">
-                        Our Services
-                    </div>
-                    <ul class="footer-linked">
-                        <li><a href="https://www.webshark.in/services/web-development/web-development-company-bangalore.php">Web Development</a></li>
-                        <li><a href="https://www.webshark.in/react-native-development-company-bangalore.php">Mobile App Development</a></li>
-                        <li><a href="https://www.webshark.in/digital-marketing-company-bangalore.php">Digital Marketing</a></li>
-                        <li><a href="https://www.webshark.in/services/android-app-development/">Android Application</a></li>
-                        <li><a href="https://www.webshark.in/services/ai/">Artificial Intelligence</a></li>
-                        <li><a href="https://www.webshark.in/services/graphic-design/">Graphic Design</a></li>
-                    </ul>
+                  <div class="footer-head">Our Services</div>
+                  <ul class="footer-linked">
+                    <li>
+                      <a
+                        href="https://www.webshark.in/services/web-development/web-development-company-bangalore.php"
+                        >Web Development</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.webshark.in/react-native-development-company-bangalore.php"
+                        >Mobile App Development</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.webshark.in/digital-marketing-company-bangalore.php"
+                        >Digital Marketing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.webshark.in/services/android-app-development/"
+                        >Android Application</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.webshark.in/services/ai/"
+                        >Artificial Intelligence</a
+                      >
+                    </li>
+                    <li>
+                      <a href="https://www.webshark.in/services/graphic-design/"
+                        >Graphic Design</a
+                      >
+                    </li>
+                  </ul>
                 </div>
                 <div class="col-md-3 second-links">
-                     <div class="footer-head">
-                        Hire Developers
-                    </div>
-                    <ul class="footer-linked">
-                        <li><a href="https://www.webshark.in/hire-nodejs-developers.php">NodeJS Developers</a></li>
-                        <li><a href="https://www.webshark.in/hire-reactjs-developers.php">ReactJs Developers</a></li>
-                        <li><a href="https://www.webshark.in/hire-angularjs-developers.php">Angular Developers</a></li>
-                        <li><a href="https://www.webshark.in/hire-reactjs-developers.php">React Native Developers</a></li>
-                        <li><a href="https://www.webshark.in/hire-reactjs-developers.php">Vue.js Developers</a></li>
-                        <li><a href="https://www.webshark.in/hire-reactjs-developers.php">ExpressJS Developers</a></li>
-      
-                        <li><a href="https://www.webshark.in/hire-reactjs-developers.php">Laravel Developers</a></li>
-      
-                        <li><a href="https://www.webshark.in/hire-reactjs-developers.php">PHP Developers</a></li>
-                    </ul>
+                  <div class="footer-head">Hire Developers</div>
+                  <ul class="footer-linked">
+                    <li>
+                      <a
+                        href="https://www.webshark.in/hire-nodejs-developers.php"
+                        >NodeJS Developers</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.webshark.in/hire-reactjs-developers.php"
+                        >ReactJs Developers</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.webshark.in/hire-angularjs-developers.php"
+                        >Angular Developers</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.webshark.in/hire-reactjs-developers.php"
+                        >React Native Developers</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.webshark.in/hire-reactjs-developers.php"
+                        >Vue.js Developers</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.webshark.in/hire-reactjs-developers.php"
+                        >ExpressJS Developers</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://www.webshark.in/hire-reactjs-developers.php"
+                        >Laravel Developers</a
+                      >
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://www.webshark.in/hire-reactjs-developers.php"
+                        >PHP Developers</a
+                      >
+                    </li>
+                  </ul>
                 </div>
                 <div class="col-md-2 third-links">
-                    <div class="footer-head">
-                        Quick Links
-                    </div>
-                    <ul class="footer-linked">
-                        <li><a href="https://www.webshark.in/">Home</a></li>
-                        <li><a href="https://www.webshark.in/about-us/">About Us</a></li>
-                        <li><a href="https://www.webshark.in/works/">Portfolio</a></li>
-                        <li><a href="https://www.webshark.in/contact/">Contact Us</a></li>
-                    </ul>
+                  <div class="footer-head">Quick Links</div>
+                  <ul class="footer-linked">
+                    <li><a href="https://www.webshark.in/">Home</a></li>
+                    <li>
+                      <a href="https://www.webshark.in/about-us/">About Us</a>
+                    </li>
+                    <li>
+                      <a href="https://www.webshark.in/works/">Portfolio</a>
+                    </li>
+                    <li>
+                      <a href="https://www.webshark.in/contact/">Contact Us</a>
+                    </li>
+                  </ul>
                 </div>
-            </div>
-            <div class="row">
+              </div>
+              <div class="row">
                 <div class="col-md-4 connect-head">
-                    <div class="head">Connect</div>
-                    <ul class="newsocial">
-                                        <li><a href="https://www.facebook.com/webshark.in/" aria-label="facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                                         <li><a href="https://www.instagram.com/webshark.in/" aria-label="instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/company/webshark-in/" aria-label="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="https://twitter.com/webshark_in" aria-label="twitter" target="_blank"><i class="fa fa-x-twitter"></i></a></li>
-                                        <li><a href="https://www.pinterest.com/websharkwebservices" aria-label="pinterest" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
-                                    </ul>
+                  <div class="head">Connect</div>
+                  <ul class="newsocial">
+                    <li>
+                      <a
+                        href="https://www.facebook.com/webshark.in/"
+                        aria-label="facebook"
+                        target="_blank"
+                        ><i class="fa fa-facebook"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.instagram.com/webshark.in/"
+                        aria-label="instagram"
+                        target="_blank"
+                        ><i class="fa fa-instagram"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.linkedin.com/company/webshark-in/"
+                        aria-label="linkedin"
+                        target="_blank"
+                        ><i class="fa fa-linkedin"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://twitter.com/webshark_in"
+                        aria-label="twitter"
+                        target="_blank"
+                        ><i class="fa fa-x-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://www.pinterest.com/websharkwebservices"
+                        aria-label="pinterest"
+                        target="_blank"
+                        ><i class="fa fa-pinterest-p"></i
+                      ></a>
+                    </li>
+                  </ul>
                 </div>
                 <div class="col-md-8 country-list">
-                    <div class="head">We serves in</div>
-                    <ul class="newflag">
-                                        <li><img src="https://www.webshark.in/img/newfooter/004-india.png"> <div>India</div></li>
-                                        <li><img src="https://www.webshark.in/img/newfooter/002-united-arab-emirates.png"> <div>UAE</div></li>
-                                        <li><img src="https://www.webshark.in/img/newfooter/003-united-kingdom.png"> <div>UK</div></li>
-                                        <li><img src="https://www.webshark.in/img/newfooter/005-usa.png"> <div>USA</div></li>
-                                        <li><img src="https://www.webshark.in/img/newfooter/006-south-africa.png"> <div>South Africa</div></li>
-                                        <li><img src="https://www.webshark.in/img/newfooter/001-canada.png"> <div>Canada</div></li>
-                                        <li><div>And Serving 89 + Countries </div></li>
-                                    </ul>
+                  <div class="head">We serves in</div>
+                  <ul class="newflag">
+                    <li>
+                      <img
+                        src="https://www.webshark.in/img/newfooter/004-india.png"
+                      />
+                      <div>India</div>
+                    </li>
+                    <li>
+                      <img
+                        src="https://www.webshark.in/img/newfooter/002-united-arab-emirates.png"
+                      />
+                      <div>UAE</div>
+                    </li>
+                    <li>
+                      <img
+                        src="https://www.webshark.in/img/newfooter/003-united-kingdom.png"
+                      />
+                      <div>UK</div>
+                    </li>
+                    <li>
+                      <img
+                        src="https://www.webshark.in/img/newfooter/005-usa.png"
+                      />
+                      <div>USA</div>
+                    </li>
+                    <li>
+                      <img
+                        src="https://www.webshark.in/img/newfooter/006-south-africa.png"
+                      />
+                      <div>South Africa</div>
+                    </li>
+                    <li>
+                      <img
+                        src="https://www.webshark.in/img/newfooter/001-canada.png"
+                      />
+                      <div>Canada</div>
+                    </li>
+                    <li><div>And Serving 89 + Countries</div></li>
+                  </ul>
                 </div>
+              </div>
             </div>
-            
-        </div>
-        <div class="star-section container-fluid">
-            <div class="row">
+            <div class="star-section container-fluid">
+              <div class="row">
                 <ul class="rating-listt">
-                    <li>
-                        <a href="https://g.co/kgs/E44Tdzc" target="_blank">
-                            <div class="star-img"><img src="https://www.webshark.in/img/newfooter/s-5.png"></div>
-                            <div class="star-text"><i class="fa fa-star"></i> 4.7</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://clutch.co/profile/webshark-web-services" target="_blank">
-                        <div class="star-img"><img src="https://www.webshark.in/img/newfooter/s-1.png"></div>
-                        <div class="star-text"><i class="fa fa-star"></i> 4.5</div>
+                  <li>
+                    <a href="https://g.co/kgs/E44Tdzc" target="_blank">
+                      <div class="star-img">
+                        <img
+                          src="https://www.webshark.in/img/newfooter/s-5.png"
+                        />
+                      </div>
+                      <div class="star-text">
+                        <i class="fa fa-star"></i> 4.7
+                      </div>
                     </a>
-                    </li>
-                    <li><a href="https://www.goodfirms.co/company/webshark-web-services" target="_blank">
-                        <div class="star-img"><img src="https://www.webshark.in/img/newfooter/s-2.png"></div>
-                        <div class="star-text"><i class="fa fa-star"></i> 5.0</div>
-                    </a></li>
-                    <li> <a href="https://www.designrush.com/agency/profile/webshark-web-services" target="_blank">
-                        <div class="star-img"><img src="https://www.webshark.in/img/newfooter/s-3.png"></div>
-                        <div class="star-text"><i class="fa fa-star"></i> 4.8</div>
-                    </a></li>
-                    <li><a href="https://www.topdevelopers.co/profile/webshark-web-services" target="_blank">
-                        <div class="star-img"><img src="https://www.webshark.in/img/newfooter/s-4.png"></div>
-                        <div class="star-text"><i class="fa fa-star"></i> 4.6</div>
-                    </a></li>
+                  </li>
+                  <li>
+                    <a
+                      href="https://clutch.co/profile/webshark-web-services"
+                      target="_blank"
+                    >
+                      <div class="star-img">
+                        <img
+                          src="https://www.webshark.in/img/newfooter/s-1.png"
+                        />
+                      </div>
+                      <div class="star-text">
+                        <i class="fa fa-star"></i> 4.5
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.goodfirms.co/company/webshark-web-services"
+                      target="_blank"
+                    >
+                      <div class="star-img">
+                        <img
+                          src="https://www.webshark.in/img/newfooter/s-2.png"
+                        />
+                      </div>
+                      <div class="star-text">
+                        <i class="fa fa-star"></i> 5.0
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.designrush.com/agency/profile/webshark-web-services"
+                      target="_blank"
+                    >
+                      <div class="star-img">
+                        <img
+                          src="https://www.webshark.in/img/newfooter/s-3.png"
+                        />
+                      </div>
+                      <div class="star-text">
+                        <i class="fa fa-star"></i> 4.8
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.topdevelopers.co/profile/webshark-web-services"
+                      target="_blank"
+                    >
+                      <div class="star-img">
+                        <img
+                          src="https://www.webshark.in/img/newfooter/s-4.png"
+                        />
+                      </div>
+                      <div class="star-text">
+                        <i class="fa fa-star"></i> 4.6
+                      </div>
+                    </a>
+                  </li>
                 </ul>
-                
+              </div>
             </div>
-      
-            </div>
-        <div class="copyright" style="margin-top: 0;background: #000;">
-            <div class="container">
+            <div class="copyright" style="margin-top: 0; background: #000">
+              <div class="container">
                 <div class="row">
-                    <div class="col-md-12 text-center"> <span>Copyright 2012 - 2024, All Right Reserved WebShark Web Services Pvt Ltd.</a></span></div>
-                    
+                  <div class="col-md-12 text-center">
+                    <span
+                      >Copyright 2012 - 2024, All Right Reserved WebShark Web
+                      Services Pvt Ltd.</span
+                    >
+                  </div>
                 </div>
+              </div>
             </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./assets/js/custom.js"></script> -->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/TextPlugin.min.js"></script>
+    <script src="assets/js/EasePack.min.js"></script>
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <script src="assets/js/SplitText.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/MotionPathPlugin.min.js"></script>
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <!-- jQuery Ripples JS -->
+
+    <script src="assets/js/custom copy.js"></script>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="videoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <video
+              class=""
+              id="clientv"
+              loop
+              playsinline
+              poster="https://cdn-eahjn.nitrocdn.com/ChEvwayTHZmZJUAdsUNMLXuXZdBprFoQ/assets/images/optimized/rev-ee91953/www.spinxdigital.com/app/themes/spinxdigital/assets/images/hero-txt-img.jpg"
+            >
+              <source
+                src="https://webshark.b-cdn.net/opt_assets/main-intro_ucuzno.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
         </div>
-       
-    </footer>
-</main>
+      </div>
+    </div>
+    <!-- Swiper Slider -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-
-<!-- Bootstrap JS -->
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-
-<script src="assets/js/gsap.min.js"></script>
-<script src="assets/js/TextPlugin.min.js"></script>
-<script src="assets/js/EasePack.min.js"></script>
-<script src="assets/js/ScrollToPlugin.min.js"></script>
-<script src="assets/js/ScrollTrigger.min.js"></script>
-<script src="assets/js/ScrollSmoother.min.js"></script>
-<script src="assets/js/SplitText.min.js"></script>
-<script src="assets/js/TweenMax.min.js"></script>
-<script src="assets/js/MotionPathPlugin.min.js"></script>
-<script src="assets/js/jquery-3.6.0.min.js"></script>
-<script src="assets/js/jquery-ui.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-<!-- jQuery Ripples JS -->
-
-<script src="assets/js/custom copy.js"></script>
-
-<!--what we do image script-->
-<script>
-    window.addEventListener('scroll', function() {
-        const whatWeDoImg = document.querySelector('.what-we-do-img');
-        const rect = whatWeDoImg.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-
-        // Calculate the fade out effect
-        if (rect.top <= windowHeight && rect.bottom >= 0) {
-            const visibleHeight = Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0);
-            const visibilityRatio = visibleHeight / rect.height;
-            whatWeDoImg.style.opacity = visibilityRatio;
-        } else {
-            whatWeDoImg.style.opacity = 0;
-        }
-    });
-
-</script>
-
-<!--what we do content script-->
-<script>
-    window.addEventListener('scroll', function() {
-        const whatWeDoContent = document.querySelector('.what-we-do-content');
-        const rect = whatWeDoContent.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-
-        if (rect.top <= windowHeight - 50 && rect.bottom >= 0) {
-            const visibleHeight = Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 50);
-            const visibilityRatio = visibleHeight / rect.height;
-            if (visibilityRatio < 0.5) {
-                whatWeDoContent.classList.add('hidden');
-            } else {
-                whatWeDoContent.classList.remove('hidden');
-            }
-        } else {
-            whatWeDoContent.classList.add('hidden');
-        }
-    });
-</script>
-    
-</body>
+    <!-- Initialize Swiper -->
+    <script>
+      // Testimonial slider 1
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3.5,
+        spaceBetween: 30,
+        grabCursor: true,
+        freeMode: true,
+        speed: 10000,
+        loop: true,
+        autoplay: {
+          delay: 0.5,
+          disableOnInteraction: false,
+        },
+      });
+      // Testimonial slider 2
+      var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 3.5,
+        spaceBetween: 30,
+        grabCursor: true,
+        freeMode: true,
+        speed: 10000,
+        loop: true,
+        autoplay: {
+          delay: 0.5,
+          disableOnInteraction: false,
+          reverseDirection: true,
+        },
+      });
+      // Get In touch slider
+      var swiper = new Swiper(".mySwiper3", {
+        slidesPerView: 2.5,
+        spaceBetween: 30,
+        grabCursor: true,
+        freeMode: true,
+        speed: 10000,
+        loop: true,
+        autoplay: {
+          delay: 0.5,
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+  </body>
 </html>
