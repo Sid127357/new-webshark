@@ -1,28 +1,30 @@
-var portfolioBox = document.querySelector(".img-box")
+var portfolioBoxes = document.querySelectorAll(".work-listing-blocks");
 var cursor = document.querySelector(".cursor-view-more");
-var mainBox = document.querySelector("main")
 
-mainBox.addEventListener("mousemove", function (ele) {
-    gsap.to(cursor,{
-        x : ele.x - 50,
-        y : ele.y - 50,
-        ease:"back.out",
-        
-    })
-})
-portfolioBox.addEventListener("mouseenter", function () {
-    cursor.innerHTML = "View More"
-    gsap.to(cursor, {
-        scale: 2
+// Loop through each .work-listing-blocks element
+portfolioBoxes.forEach(function (portfolioBox) {
+    portfolioBox.addEventListener("mousemove", function (ele) {
+        gsap.to(cursor, {
+            x: ele.clientX - 70,
+            y: ele.clientY - 50,
+            duration: 0, // Instant transition
+            display: "flex"
+        });
     });
-    // console.log(event);
 
-});
-portfolioBox.addEventListener("mouseleave", function () {
-    cursor.innerHTML = ""
-    gsap.to(cursor, {
-        scale: 1
+    portfolioBox.addEventListener("mouseenter", function () {
+        cursor.innerHTML = "View Website";
+        gsap.to(cursor, {
+            duration: 0, // Instant transition
+            display: "flex"
+        });
     });
-    // console.log(event);
 
+    portfolioBox.addEventListener("mouseleave", function () {
+        cursor.innerHTML = "";
+        gsap.to(cursor, {
+            duration: 0, // Instant transition
+            display: "none"
+        });
+    });
 });

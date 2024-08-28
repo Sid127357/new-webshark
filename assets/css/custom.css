@@ -2086,9 +2086,8 @@ position: absolute;
 .canvas-block  [class*="col-"]{padding: 60px 20px;}
 .canvas-block .work-listing-blocks.listing-pattern3:hover .work-listing-image .work-listing-wrapper{transform: scale(1.08);}
 
-.cursor-view-more {height: 20px;width: 70px;background-color: #000;border: 1px solid #fff;position: fixed;z-index: 999;pointer-events: none;border-radius: 50px;font-size: 6px;display: flex;text-align: center;align-items: center;justify-content: center;}
-.dumy-main{display: flex;justify-content: center;align-items: center;height: 100vh;}
-.dumy-main .img-box{height: 50vh;width: 70vw;background-color: pink;cursor: pointer;}
+.cursor-view-more {height: 40px;width: 150px;background-color: #000;position: fixed;z-index: 999;pointer-events: none;font-size: 16px;text-align: center;align-items: center;justify-content: center;}
+
 
 
 
