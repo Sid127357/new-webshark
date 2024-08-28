@@ -2086,8 +2086,8 @@ position: absolute;
 .canvas-block  [class*="col-"]{padding: 60px 20px;}
 .canvas-block .work-listing-blocks.listing-pattern3:hover .work-listing-image .work-listing-wrapper{transform: scale(1.08);}
 
-.cursor-view-more {height: 40px;width: 150px;background-color: #000;position: fixed;z-index: 999;pointer-events: none;font-size: 16px;text-align: center;align-items: center;justify-content: center;}
-
+.cursor-view-more {padding:10px 30px;background-color: #000;position: fixed;z-index: 999;pointer-events: none;font-size: 16px;text-align: center;align-items: center;justify-content: center;}
+.cursor-view-more .view-website-btn:after{font-family: fontawesome;content:"\f061";padding-left: 10px;}
 
 
 

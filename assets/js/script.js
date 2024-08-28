@@ -13,7 +13,7 @@ portfolioBoxes.forEach(function (portfolioBox) {
     });
 
     portfolioBox.addEventListener("mouseenter", function () {
-        cursor.innerHTML = "View Website";
+        cursor.innerHTML = "<span class='view-website-btn'>View Website</span>";
         gsap.to(cursor, {
             duration: 0, // Instant transition
             display: "flex"
