@@ -4,14 +4,15 @@ var mainBox = document.querySelector("main")
 
 mainBox.addEventListener("mousemove", function (ele) {
     gsap.to(cursor,{
-        x : ele.x,
-        y : ele.y
+        x : ele.x - 50,
+        y : ele.y - 50,
+        ease:"back.out",
+        
     })
 })
 portfolioBox.addEventListener("mouseenter", function () {
     cursor.innerHTML = "View More"
     gsap.to(cursor, {
-        
         scale: 2
     });
     // console.log(event);
