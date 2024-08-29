@@ -2090,11 +2090,41 @@ position: absolute;
 .cursor-view-more .view-website-btn:after{font-family: fontawesome;content:"\f061";padding-left: 10px;}
 
 /* Single service Banner */
-
 .single-service-banner{padding-top: 200px;padding-bottom:80px}
 .single-service-banner .banner-text-block h1{background: linear-gradient(to right,#4075fd,#f466c4);background-clip: border-box;background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: transparent;font-size: 110px;font-weight: 800;line-height: 1.2;letter-spacing: -4px;}
 .single-service-banner .banner-text-block h2{font-size: 36px;margin-top: 40px;}
 .single-service-banner .graphic-box{padding-left: 30px;}
 .single-service-banner .graphic-box img{width: 140%;}
+
+.get-website-block{padding: 80px 0px;}
+.get-website-block .main-img-box{height: 100%;padding: 50px;background-color: #fff;margin-right: 50px;}
+.get-website-block .main-img-box img{height: 100%; object-fit: cover;}
+.get-website-block .content-wrapper .row{margin-top: 50px;}
+.get-website-block .strate-icon{display: flex;align-items: center;font-size: 18px;line-height: 20px;font-weight: 500;margin-bottom: 20px;}
+.get-website-block .strate-icon span{display: inline-block;height: 42px;width: 42px;margin-right: 10px;padding: 10px;border-radius: 50%;background: url('../img/services/strait-badge.png') 50% / 50% no-repeat;  background-color: #4094ce;transform: rotate(180deg);filter: brightness(100%);}
+.get-website-block .text-block h2{margin-bottom: 20px;font-size: 48px;line-height: 57px;}
+.get-website-block .text-block p{color: #a6a6a6;font-size: 20px; line-height: 28px;}
+.get-website-block .card-feature-2 {display: flex;align-items: flex-start;margin-bottom: 33px;}
+.get-website-block .card-feature-2 .card-image {transition: .3s;height: 64px;width: 64px;border-radius: 8px;margin-right: 19px;line-height: 60px;min-width: 64px;text-align: center;background-color: #eceef2;padding: 10px;display: grid;place-items: center;}
+.get-website-block .card-feature-2 .card-image img{width: 70%;transition: .3s;}
+.get-website-block .card-feature-2 .card-info {min-width: 60%;}
+.get-website-block .card-feature-2 .card-info a{color: #fff;}
+.get-website-block .card-feature-2 .card-info h3{font-size: 22px;}
+.get-website-block .card-feature-2 .card-info P{color: #a6a6a6;font-size: 16px;line-height: 24px;}
+.get-website-block .card-feature-2:hover .card-image{background-color:#4094ce;}
+.get-website-block .card-feature-2:hover .card-image img{filter: invert(1);}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
