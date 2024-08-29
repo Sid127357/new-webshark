@@ -2089,6 +2089,12 @@ position: absolute;
 .cursor-view-more {padding:10px 30px;background-color: #000;position: fixed;z-index: 999;pointer-events: none;font-size: 16px;text-align: center;align-items: center;justify-content: center;}
 .cursor-view-more .view-website-btn:after{font-family: fontawesome;content:"\f061";padding-left: 10px;}
 
+/* Single service Banner */
 
+.single-service-banner{padding-top: 200px;padding-bottom:80px}
+.single-service-banner .banner-text-block h1{background: linear-gradient(to right,#4075fd,#f466c4);background-clip: border-box;background-clip: text;-webkit-background-clip: text;-webkit-text-fill-color: transparent;color: transparent;font-size: 110px;font-weight: 800;line-height: 1.2;letter-spacing: -4px;}
+.single-service-banner .banner-text-block h2{font-size: 36px;margin-top: 40px;}
+.single-service-banner .graphic-box{padding-left: 30px;}
+.single-service-banner .graphic-box img{width: 140%;}
 
 
