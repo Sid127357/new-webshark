@@ -2136,10 +2136,10 @@ position: absolute;
 .news-slider .card-info .btn-learmore-2:hover{color:#4094ce}
 .news-slider .card-info .btn-learmore-2 span{height: 40px;width: 40px;background-color: #4094ce;border-radius: 50%;display: grid;place-items: center;}
 .news-slider .card-info .btn-learmore-2 span:after{font-family: fontawesome;content:"\f061";transform: rotate(-45deg);color:#fff}
-.news-slider .nav-btn{width: 150px;position: relative;}
-.news-slider .swiper-button-next::after,.news-slider .swiper-button-prev::after{content:"\f061";font-family: fontawesome;font-size: 20px;color:#ffffffab;transition: .3s;}
+.news-slider .nav-btn{width: 120px;position: relative;}
+.news-slider .swiper-button-next::after,.news-slider .swiper-button-prev::after{content:"\f061";font-family: fontawesome;font-size: 16px;color:#ffffffab;transition: .3s;}
 .news-slider .swiper-button-prev::after{transform: rotate(180deg);}
-.news-slider .swiper-button-next, .news-slider .swiper-button-prev{transition: .3s;border: 1px solid #ffffffab;width: 50px;height: 50px;padding: 10px;display: grid;place-items: center;border-radius: 50%;}
+.news-slider .swiper-button-next, .news-slider .swiper-button-prev{transition: .3s;border: 1px solid #ffffffab;width: 40px;height: 40px;padding: 10px;display: grid;place-items: center;border-radius: 50%;}
 .news-slider .swiper-button-next:hover, .news-slider .swiper-button-prev:hover{background-color: #fff;}
 .news-slider .swiper-button-next:hover:after, .news-slider .swiper-button-prev:hover:after{color: #000;}
 
