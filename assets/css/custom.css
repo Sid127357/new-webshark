@@ -2108,7 +2108,8 @@ position: absolute;
 .get-website-block .card-feature-2 .card-image {transition: .3s;height: 64px;width: 64px;border-radius: 8px;margin-right: 19px;line-height: 60px;min-width: 64px;text-align: center;background-color: #eceef2;padding: 10px;display: grid;place-items: center;}
 .get-website-block .card-feature-2 .card-image img{width: 70%;transition: .3s;}
 .get-website-block .card-feature-2 .card-info {min-width: 60%;}
-.get-website-block .card-feature-2 .card-info a{color: #fff;}
+.get-website-block .card-feature-2 .card-info a{color: #fff;transition: .3s;}
+.get-website-block .card-feature-2 .card-info a:hover{color: #4094ce;}
 .get-website-block .card-feature-2 .card-info h3{font-size: 22px;}
 .get-website-block .card-feature-2 .card-info P{color: #a6a6a6;font-size: 16px;line-height: 24px;}
 .get-website-block .card-feature-2:hover .card-image{background-color:#4094ce;}
