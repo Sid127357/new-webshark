@@ -2115,6 +2115,12 @@ position: absolute;
 .get-website-block .card-feature-2:hover .card-image{background-color:#4094ce;}
 .get-website-block .card-feature-2:hover .card-image img{filter: invert(1);}
 
+.methodology-block{padding: 80px 0px;}
+.methodology-block .section-title p{max-width: 50%;margin: 20px auto;color: #a6a6a6;}
+.methodology-block .row{margin-top: 50px;}
+.methodology-block .card-preparing .card-image {background: linear-gradient(180deg,#2d2c2c,rgba(236,238,242,0));border-radius: 32px;margin-bottom: 39px;overflow: hidden;padding: 35px;text-align: center;position: relative;}
+.methodology-block .card-preparing .card-info h5 {margin-bottom: 24px;font-size: 26px;line-height: 31px;}
+.methodology-block .card-preparing .card-info p{width: 85% ;color:#a6a6a6;font-size: 18px;line-height: 28px;}
 
 
 
