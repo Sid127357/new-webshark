@@ -2053,6 +2053,7 @@ position: absolute;
 .portfolio-block .text-box{padding-top:70px ;mix-blend-mode: difference;}
 
 .section-title.full{max-width: 100%;}
+.section-title p{color: #a6a6a6;}
 
 .canvas-block{padding-bottom: 80px;}
 .canvas-block .section-title h2{font-size:62px;text-transform: uppercase;}
@@ -2116,16 +2117,31 @@ position: absolute;
 .get-website-block .card-feature-2:hover .card-image img{filter: invert(1);}
 
 .methodology-block{padding: 80px 0px;}
-.methodology-block .section-title p{max-width: 50%;margin: 20px auto;color: #a6a6a6;}
+.methodology-block .section-title p{max-width: 50%;margin: 20px auto;}
 .methodology-block .row{margin-top: 50px;}
 .methodology-block .card-preparing .card-image {background: linear-gradient(180deg,#2d2c2c,rgba(236,238,242,0));border-radius: 32px;margin-bottom: 39px;overflow: hidden;padding: 35px;text-align: center;position: relative;}
 .methodology-block .card-preparing .card-info h5 {margin-bottom: 24px;font-size: 26px;line-height: 31px;}
 .methodology-block .card-preparing .card-info p{width: 85% ;color:#a6a6a6;font-size: 18px;line-height: 28px;}
 
-
-
-
-
+.news-slider{padding: 80px 0px;}
+.news-slider .swiper{margin-top: 70px;}
+.news-slider .card-news {border-radius:16px;overflow:hidden;margin-bottom:30px}
+.news-slider .card-news .card-image {margin-bottom:21px}
+.news-slider .card-news .card-image img {width:100%;border-radius:16px;display:block}
+.news-slider .card-news a{color:#fff}
+.news-slider .card-news .card-info :hover a{color:#4094ce}
+.news-slider .card-news .card-info p{color: #a6a6a6;margin: 20px 0px;}
+.heading-4{font-size: 26px;font-weight: 600;}
+.news-slider .card-info .btn-learmore-2{transition: .3s;display: flex;gap:12px;align-items: center;margin-top: 40px;font-size: 18px;}
+.news-slider .card-info .btn-learmore-2:hover{color:#4094ce}
+.news-slider .card-info .btn-learmore-2 span{height: 40px;width: 40px;background-color: #4094ce;border-radius: 50%;display: grid;place-items: center;}
+.news-slider .card-info .btn-learmore-2 span:after{font-family: fontawesome;content:"\f061";transform: rotate(-45deg);color:#fff}
+.news-slider .nav-btn{width: 150px;position: relative;}
+.news-slider .swiper-button-next::after,.news-slider .swiper-button-prev::after{content:"\f061";font-family: fontawesome;font-size: 20px;color:#ffffffab;transition: .3s;}
+.news-slider .swiper-button-prev::after{transform: rotate(180deg);}
+.news-slider .swiper-button-next, .news-slider .swiper-button-prev{transition: .3s;border: 1px solid #ffffffab;width: 50px;height: 50px;padding: 10px;display: grid;place-items: center;border-radius: 50%;}
+.news-slider .swiper-button-next:hover, .news-slider .swiper-button-prev:hover{background-color: #fff;}
+.news-slider .swiper-button-next:hover:after, .news-slider .swiper-button-prev:hover:after{color: #000;}
 
 
 
