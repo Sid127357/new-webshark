@@ -1863,7 +1863,7 @@ position: absolute;
 .about-block .text-box h1{background: linear-gradient(to right,#7953cd 20%,#00affa 30%,#0190cd 70%,#764ada 80%);-webkit-background-clip: text;background-clip: text;-webkit-text-fill-color: transparent;text-fill-color: transparent;background-size: 500% auto;animation: textShine 5s ease-in-out infinite alternate;font-size: 120px;font-weight: 800;text-transform: capitalize;}
 @keyframes textShine {0% {background-position: 0% 50%;}100% {background-position: 100% 50%;}}
 .about-block .text-box h2{font-size: 44px;margin: 20px 0px;}
-.about-block .text-box h2::after {content: '|';position: absolute;color: #FFF;font-size: 2.5rem;padding-left: 1rem;display: inline-block;align-items: center;margin-top: 4px;animation-name: type-cursor ;animation-duration: 1s;animation-iteration-count: infinite;}
+.about-block .text-box h2::after {content: '|';position: absolute;color: #FFF;font-size: 2.5rem;display: inline-block;align-items: center;margin-top: 4px;animation-name: type-cursor ;animation-duration: 1s;animation-iteration-count: infinite;}
 @keyframes type-cursor {from{opacity: 0;}to{opacity: 1;}}
 .about-block .text-box p{color:gray}
 .about-block .counter-box-wrapper{position: absolute;right: 0;top: 2%;height: auto;display: flex;align-items: end;flex-direction: column;width: 800px;}
