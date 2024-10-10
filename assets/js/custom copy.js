@@ -25,9 +25,89 @@ function typeWriter() {
     setTimeout(typeWriter, 500);
   }
 }
-
 typeWriter();
 
+// Clients Banner
+// Array of image URLs (replace with your actual image URLs)
+const imageUrls = [
+  "https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e099cb2c22455ad9fe_client-01.svg",
+  "https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e160d9158dfee47b1c_client-02.svg",
+  "https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e12d697c22f4e4b148_client-03.svg",
+  "https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/654475de0188162db6224bcb_client-04.svg",
+  "https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e1fa9c3abad04c5d25_client-05.svg",
+  "https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e25634a435d83f8303_client-06.svg",
+  "https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e260d9158dfee47bc2_client-07.svg",
+  "https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e346135bc56aa46c5c_client-08.svg",
+  "https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e2e67f3d8bb8acbc05_client-09.svg",
+  "https://assets-global.website-files.com/6512ad7e5488b0eed8d386c6/651800e31b5b8c2eda464231_client-10.svg",
+];
+
+// Configuration
+const gridSize = 10;
+const minChangeDuration = 3000; 
+const maxChangeDuration = 8000; 
+const transitionDuration = 1000; 
+
+
+function getRandomImageUrl(currentUrl) {
+  let newUrl;
+  do {
+    newUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)];
+  } while (newUrl === currentUrl && imageUrls.length > 1);
+  return newUrl;
+}
+
+function changeLogo(logoElement) {
+  const currentUrl = logoElement.src;
+  const newImageUrl = getRandomImageUrl(currentUrl);
+  
+  const newImage = new Image();
+  newImage.src = newImageUrl;
+  
+  newImage.onload = () => {
+    logoElement.style.opacity = '0';
+    setTimeout(() => {
+      logoElement.src = newImageUrl;
+      logoElement.style.opacity = '1';
+    }, transitionDuration);
+  };
+
+  newImage.onerror = (err) => {
+    console.error('Error loading image:', err);
+  };
+}
+
+function scheduleLogoChange(logoElement) {
+  const changeTime = Math.random() * (maxChangeDuration - minChangeDuration) + minChangeDuration;
+  
+  setTimeout(() => {
+    changeLogo(logoElement);
+    scheduleLogoChange(logoElement);
+  }, changeTime);
+}
+
+function initializeGrid() {
+  const logoElements = document.querySelectorAll('.grid-client .client-image');
+  
+  logoElements.forEach((logoElement) => {
+    const originalSrc = logoElement.src;
+    
+    logoElement.src = getRandomImageUrl(originalSrc);
+    
+    logoElement.style.transition = `opacity ${transitionDuration}ms ease-in-out`;
+    
+    logoElement.style.width = '100%';
+    logoElement.style.height = 'auto';
+    
+    scheduleLogoChange(logoElement);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(initializeGrid, 100);
+});
+
+// -----------------------------------
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, ScrollSmoother, SplitText, TweenLite, TimelineMax);
 gsap.defaults({ ease: "none" });
 gsap.config({ nullTargetWarn: false });

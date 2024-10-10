@@ -1874,6 +1874,8 @@ position: absolute;
 .about-block .counter-box-wrapper .counter-box h3{font-size: 42px;font-weight: 700;}
 .about-block .counter-box-wrapper .counter-box h4{font-size: 16px;}
 .about-block .counter-box-wrapper .counter-box .about-counter-img-one{position: absolute;top: -24px;bottom: auto;left: 55px;right: auto;transform: rotate(180deg);}
+.about-block .counter-box-wrapper{top: 42%;}
+
 
 .section-title{max-width: 50%;margin: 0 auto;margin-bottom: 70px;}
 .section-title h2{font-size: 55px;font-weight: 700;margin-top:10px;}
@@ -1906,7 +1908,14 @@ position: absolute;
 .feature-section .feature-decoration-shape{position: absolute;bottom: -1px;right: -1px;}
 .feature-section .feature-video-position{cursor: pointer;position: absolute;top: auto;bottom: -40px;left: 150px;right: auto;}
 .feature-section .feature-video-rounded{width: 150px;height: 150px;background-color: #1a1a1a;border-radius: 50%;justify-content: center;align-items: center;display: flex;position: relative;}
+.feature-section .feature-video-rounded .feature-video-image {position: absolute;animation: rotate 10s linear infinite;}
+@keyframes rotate {from {transform: rotate(0deg);}to {transform: rotate(360deg);}}
 .feature-section .feature-play-icon{position: absolute;}  
+.feature-section .left_sec, .feature-section .right_sec{width: 50%;}
+.feature-section .feature-content-wrap{position: sticky;top: -360px;}
+.feature-section .feature-wrap{padding-top: 25rem;}
+
+
 
 .client-section{padding: 80px 0px;}
 .client-section .client-item-background{padding: 150px 200px 100px;border-radius: 20px;position: relative;background-color: #fff;color: #000;}
