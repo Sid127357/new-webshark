@@ -1,3 +1,33 @@
+// About us Auto Type
+
+var txtArray = ['A group of creative rebels, embracing challenges with innovation and passion.', 'Another message!', 'Auto typing in a loop!'];
+var i = 0;
+var txtIndex = 0;
+var speed = 100;
+var isDeleting = false;
+function typeWriter() {
+  var currentTxt = txtArray[txtIndex];
+
+  if (!isDeleting && i < currentTxt.length) {
+    document.getElementById("demo").innerHTML = currentTxt.substring(0, i + 1);
+    i++;
+    setTimeout(typeWriter, speed);
+  } else if (isDeleting && i > 0) {
+    document.getElementById("demo").innerHTML = currentTxt.substring(0, i - 1);
+    i--;
+    setTimeout(typeWriter, speed);
+  } else if (i === currentTxt.length && !isDeleting) {
+    isDeleting = true;
+    setTimeout(typeWriter, 1000);
+  } else if (i === 0 && isDeleting) {
+    isDeleting = false;
+    txtIndex = (txtIndex + 1) % txtArray.length;
+    setTimeout(typeWriter, 500);
+  }
+}
+
+typeWriter();
+
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, ScrollSmoother, SplitText, TweenLite, TimelineMax);
 gsap.defaults({ ease: "none" });
 gsap.config({ nullTargetWarn: false });
