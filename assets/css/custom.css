@@ -1858,8 +1858,8 @@ position: absolute;
 }
 
 /* About US page */
-.about-block{padding: 80px 0px;position: relative;height: 600px;}
-.about-block .text-wrapper{display: flex;width: 50%;}
+.about-block{padding: 80px 0px;height: 600px;position: relative;}
+.about-block .text-wrapper{display: flex;height: 600px;width: 50%;}
 .about-block .text-box h1{background: linear-gradient(to right,#7953cd 20%,#00affa 30%,#0190cd 70%,#764ada 80%);-webkit-background-clip: text;background-clip: text;-webkit-text-fill-color: transparent;text-fill-color: transparent;background-size: 500% auto;animation: textShine 5s ease-in-out infinite alternate;font-size: 120px;font-weight: 800;text-transform: capitalize;}
 @keyframes textShine {0% {background-position: 0% 50%;}100% {background-position: 100% 50%;}}
 .about-block .text-box h2{font-size: 44px;margin: 20px 0px;}
