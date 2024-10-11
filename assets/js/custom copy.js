@@ -44,9 +44,9 @@ const imageUrls = [
 
 // Configuration
 const gridSize = 10;
-const minChangeDuration = 3000; 
-const maxChangeDuration = 8000; 
-const transitionDuration = 1000; 
+const minChangeDuration = 3500; 
+const maxChangeDuration = 10000; 
+const transitionDuration = 1500; 
 
 
 function getRandomImageUrl(currentUrl) {
