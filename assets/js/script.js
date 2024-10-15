@@ -28,3 +28,13 @@ portfolioBoxes.forEach(function (portfolioBox) {
         });
     });
 });
+
+// Single Course Testimonial Slider
+var swiper = new Swiper('.singleCourseTesti', {
+    loop: true, 
+    autoplay: {
+      delay: 3000, 
+      disableOnInteraction: false, 
+    },
+    // grabCursor: true, 
+  });

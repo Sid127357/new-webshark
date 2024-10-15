@@ -1913,8 +1913,6 @@ position: absolute;
 .feature-section .left_sec, .feature-section .right_sec{width: 50%;}
 .feature-section .feature-content-wrap{position: sticky;top: -360px;}
 
-
-
 .client-section{padding: 80px 0px;}
 .client-section .client-item-background{padding: 150px 200px 100px;border-radius: 20px;position: relative;background-color: #fff;color: #000;}
 .client-section .client-item-background .section-title{max-width: 100%;;}
@@ -2110,10 +2108,10 @@ position: absolute;
 .get-website-block .main-img-box{height: 100%;padding: 50px;background-color: #fff;margin-right: 50px;}
 .get-website-block .main-img-box img{height: 100%; object-fit: cover;}
 .get-website-block .content-wrapper .row{margin-top: 50px;}
-.get-website-block .strate-icon{display: flex;align-items: center;font-size: 18px;line-height: 20px;font-weight: 500;margin-bottom: 20px;}
-.get-website-block .strate-icon span{display: inline-block;height: 42px;width: 42px;margin-right: 10px;padding: 10px;border-radius: 50%;background: url('../img/services/strait-badge.png') 50% / 50% no-repeat;  background-color: #4094ce;transform: rotate(180deg);filter: brightness(100%);}
-.get-website-block .text-block h2{margin-bottom: 20px;font-size: 48px;line-height: 57px;}
-.get-website-block .text-block p{color: #a6a6a6;font-size: 20px; line-height: 28px;}
+.strate-icon{display: flex;align-items: center;font-size: 18px;line-height: 20px;font-weight: 500;margin-bottom: 20px;}
+.strate-icon span{display: inline-block;height: 42px;width: 42px;margin-right: 10px;padding: 10px;border-radius: 50%;background: url('../img/services/strait-badge.png') 50% / 50% no-repeat;  background-color: #4094ce;transform: rotate(180deg);filter: brightness(100%);}
+.text-block h2{margin-bottom: 20px;font-size: 48px;line-height: 57px;}
+.text-block p{color: #a6a6a6;font-size: 20px; line-height: 28px;}
 .get-website-block .card-feature-2 {display: flex;align-items: flex-start;margin-bottom: 33px;}
 .get-website-block .card-feature-2 .card-image {transition: .3s;height: 64px;width: 64px;border-radius: 8px;margin-right: 19px;line-height: 60px;min-width: 64px;text-align: center;background-color: #eceef2;padding: 10px;display: grid;place-items: center;}
 .get-website-block .card-feature-2 .card-image img{width: 70%;transition: .3s;}
@@ -2158,7 +2156,21 @@ position: absolute;
 .protection-block .cta_btn{display: flex;align-items: center;margin-top: 50px;gap:20px}
 .protection-block .cta_btn .btn{margin: 0px;}
 .protection-block .cta_btn .btn-learmore-2{margin: 0px;color:#fff}
+.protection-block .singleCourseTesti .card{background:transparent;padding-left:40px;padding-top:50px;}
+.protection-block .singleCourseTesti .card:before{content: "\f10d";font-family: fontawesome;position: absolute;font-size: 40px;top: 0px;left: 0;}
+.protection-block .singleCourseTesti .card .comment{font-size: 18px;margin-bottom: 30px;}
+.protection-block .singleCourseTesti .card .company-logo{filter: invert(1);width: 100px;}
+.protection-block .singleCourseTesti .card .author-img{width: 50px;height: 50px;}
+.protection-block .singleCourseTesti .card a{color: #fff;display: block;font-weight: 600;}
+.protection-block .singleCourseTesti .card p{font-size: 14px;}
 
+.faq-block{padding: 80px 0px;}
+.faq-block .text-block p{font-size: 18px;}
+.faq-block .text-block a{color: #4094ce;font-weight: 600;}
+.faq-block .accordion .accordion-item{border-radius: 10px;overflow: hidden;margin-bottom: 20px;background-color: #2d2c2c8a;color:#fff;border: none;}
+.faq-block .accordion .accordion-button{box-shadow: none;background: transparent;color: #fff;font-weight: 700;padding: 20px;}
+.faq-block .accordion .accordion-button:after{content:"\2b";font-family: fontawesome;background: #4094ce;border-radius: 50px;color: #fff;display: grid;place-items: center;font-size: 14px;height: 25px;width: 25px;}
+.faq-block .accordion .accordion-button:not(.collapsed)::after {content: "\f068";}
 
 
 

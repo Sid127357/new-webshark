@@ -107,6 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setTimeout(initializeGrid, 100);
 });
 
+
 // -----------------------------------
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, ScrollSmoother, SplitText, TweenLite, TimelineMax);
 gsap.defaults({ ease: "none" });
