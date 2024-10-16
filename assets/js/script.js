@@ -29,6 +29,20 @@ portfolioBoxes.forEach(function (portfolioBox) {
     });
 });
 
+var swiper = new Swiper(".latestNews", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+    speed: 1000,
+  });
+
 // Single Course Testimonial Slider
 var swiper = new Swiper('.singleCourseTesti', {
     loop: true, 
