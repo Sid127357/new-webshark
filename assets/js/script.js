@@ -30,8 +30,8 @@ portfolioBoxes.forEach(function (portfolioBox) {
 });
 
 var swiper = new Swiper(".latestNews", {
-    slidesPerView: 3,
-    spaceBetween: 30,
+    // slidesPerView: 3,
+    // spaceBetween: 30,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -41,7 +41,25 @@ var swiper = new Swiper(".latestNews", {
         delay: 3000,
     },
     speed: 1000,
+    breakpoints: {
+        // For screens smaller than 640px
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        // For screens between 640px and 768px
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        // For screens 1024px and above
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
 });
+
 
 // Single Course Testimonial Slider
 var swiper = new Swiper('.singleCourseTesti', {

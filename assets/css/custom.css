@@ -2150,6 +2150,9 @@ position: absolute;
 .news-slider .swiper-button-next:hover, .news-slider .swiper-button-prev:hover{background-color: #fff;}
 .news-slider .swiper-button-next:hover:after, .news-slider .swiper-button-prev:hover:after{color: #000;}
 
+.featured-work-slider .card-news .card-info p{display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;  overflow: hidden;}
+.featured-work-slider .card-news .card-info .module{text-transform: uppercase;color: #fff;display: block;font-size: 14px;margin-bottom: 10px;}
+
 .protection-block{padding: 80px 0px;}
 .protection-block .text-box h2{font-size: 48px;line-height: 57px;}
 .protection-block .text-box p{color:#a6a6a6;font-size: 18px;line-height: 28px;}
@@ -2176,10 +2179,75 @@ position: absolute;
 .best-technologies .section-title{position: absolute;width: 100%;top: 13%;}
 .best-technologies .technologies-grid {display: grid;grid-template-columns: repeat(6, 1fr); grid-template-rows: repeat(4, auto); gap: 10px; width: 100vw; margin: 0 auto;}
 .best-technologies .tech-card {background: #eee;padding: 60px; display: flex;justify-content: center;align-items: center;flex-direction: column;height: 100%;}
-.best-technologies .tech-card h3{margin-top: 20px;color: #fff;font-size: 22px;}
+.best-technologies .tech-card h3{margin-top: 20px;color: #fff;font-size: 20px;}
 .best-technologies .overlay{background: linear-gradient(180deg,#000,rgba(236,238,242,0));position: absolute;height: 50%;width: 100%;}
 
-
-
-
-
+@media screen and (min-width:320px) and (max-width:768px) {
+  .single-service-banner{padding-top: 100px;}
+  .single-service-banner .banner-text-block h1{font-size: 50px;}
+  .single-service-banner .banner-text-block h2 {font-size: 18px;margin-top: 20px;}
+  .single-service-banner .graphic-box{padding-left: 0px;margin-bottom: 50px;}
+  .single-service-banner .graphic-box img{width: 100%;}
+  .get-website-block, .single-service-banner{padding: 50px 0px;padding-top: 0px;}
+  .get-website-block .main-img-box{margin-right: 0px;}
+  .get-website-block .main-img-box .content-wrapper{margin-top: 30px;}
+  .text-block h2, .protection-block .text-box h2{font-size: 22px;line-height: 28px;margin-bottom: 10px;}
+  .text-block p, .protection-block .text-box p{font-size: 14px;line-height: inherit;}
+  .get-website-block .card-feature-2 .card-image{height: 50px;min-width: 50px;}
+  .get-website-block .card-feature-2 .card-info h3{font-size: 16px;}
+  .get-website-block .card-feature-2 .card-info P{font-size: 12px;line-height: inherit;}
+  .get-website-block .card-feature-2{margin-bottom: 0px;}
+  .methodology-block{padding: 50px 0px;padding-top: 0px;}
+  .section-title{margin-bottom: 30px;}
+  .section-title h2{font-size: 24px;}
+  .section-title p.half{max-width: 100%;}
+  .section-title p{font-size: 14px;margin-top: 10px !important;}
+  .methodology-block .card-preparing{margin-bottom: 30px;}
+  .methodology-block .card-preparing .card-image{margin-bottom: 0px;}
+  .methodology-block .card-preparing .card-info h5{font-size: 18px;margin-bottom: 5px;}
+  .methodology-block .card-preparing .card-info p{width: 100%;font-size: 14px;line-height: inherit;}
+  .protection-block{padding: 50px 0px; padding-top: 0px;}
+  .protection-block .img-block{margin-bottom: 50px;}
+  .btn-learmore-2{font-size: 14px;margin-top: 20px;}
+  .protection-block .cta_btn .btn{width: 50%;font-size: 14px;}
+  .btn-learmore-2 span{height: 30px;width: 30px;}
+  .protection-block .singleCourseTesti .card{padding-left: 30px;padding-top: 30px;}
+  .protection-block .singleCourseTesti .card::before{font-size:30px;}
+  .protection-block .singleCourseTesti .card .comment{font-size: 14px;}
+  .protection-block .singleCourseTesti .card .author-img{height: 35px;width: 35px;}
+  .protection-block .singleCourseTesti .card p{font-size: 12px;margin-bottom: 0px;}
+  .protection-block .singleCourseTesti .card a{font-size: 14px;}
+  .protection-block .singleCourseTesti .card .company-logo{width: 60px;}
+  .strate-icon span{height: 32px;width: 32px;}
+  .faq-block .text-block p{font-size: 14px;line-height: 20px;}
+  .faq-block .accordion{margin-top: 20px;}
+  .faq-block .accordion .accordion-button{font-size: 14px;}
+  .faq-block .accordion .accordion-body{font-size: 12px;}
+  .faq-block .accordion .accordion-button::after{height: 20px;width: 20px;font-size: 10px;}
+  .faq-block, .best-technologies{padding: 50px 0px;padding-top: 0px;}
+  .best-technologies .technologies-grid {grid-template-columns: repeat(3, 1fr);}
+  .best-technologies .tech-card{padding: 10px;}
+  .best-technologies .tech-card h3{font-size: 12px;}
+  .best-technologies .tech-card img{max-width: 60%;}
+  .best-technologies .section-title{top: 7%;}
+  .news-slider{padding: 50px 0px;padding-top: 0px;}
+  .news-slider .swiper{margin-top: 50px;;}
+  .news-slider .card-news .card-info p{font-size: 14px;margin-bottom: 0px;}
+  .heading-4{font-size: 20px;}
+  .news-slider .card-news{margin-bottom: 0px;border-radius: 0px;}}
+  .news-slider .swiper-button-next, .news-slider .swiper-button-prev{height: 30px;width: 30px;padding: 6px;}
+  .news-slider .swiper-button-next::after, .news-slider .swiper-button-prev::after{font-size: 12px;}
+  .footernew-top{padding: 20px;}
+  .econtact-form .form-group .form-control, .new-address, .main-footer-left, .new-email, .new-phone{font-size: 14px;}
+  .country-name{font-size: 16px;}
+  .copyright{font-size: 10px;}
+  .newflag li:last-child{margin-right: 0px;}
+  .get-website-block .content-wrapper{margin-top: 40px;}
+  .cta_btn{margin-right: 50px;display: flex;}
+  .cta_btn .marquee-button{width: 100px;font-size: 10px;margin-left: 0px;height: 32px;}
+  .marquee-button::after, .marquee-button::before{line-height: 32px;height: 32px;}
+  .navbar-brand img{max-width: 150px;}
+  .navbar .top-header{display: none;}
+  .navbar .navbar-toggler{position: absolute;right: 15px;border: 1px solid #fff;font-size: 10px;padding: 7px;border-radius: 0px;}
+  .navbar .navbar-toggler-icon{filter: invert(1) brightness(100);}
+}
