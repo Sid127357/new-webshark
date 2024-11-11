@@ -2183,7 +2183,7 @@ position: absolute;
 .best-technologies .overlay{background: linear-gradient(180deg,#000,rgba(236,238,242,0));position: absolute;height: 50%;width: 100%;}
 
 @media screen and (min-width:320px) and (max-width:768px) {
-  .single-service-banner{padding-top: 100px;}
+  .single-service-banner{padding-top: 50px !important;}
   .single-service-banner .banner-text-block h1{font-size: 50px;}
   .single-service-banner .banner-text-block h2 {font-size: 18px;margin-top: 20px;}
   .single-service-banner .graphic-box{padding-left: 0px;margin-bottom: 50px;}
@@ -2231,7 +2231,7 @@ position: absolute;
   .best-technologies .tech-card img{max-width: 60%;}
   .best-technologies .section-title{top: 7%;}
   .news-slider{padding: 50px 0px;padding-top: 0px;}
-  .news-slider .swiper{margin-top: 50px;;}
+  .news-slider .swiper{margin-top: 50px;}
   .news-slider .card-news .card-info p{font-size: 14px;margin-bottom: 0px;}
   .heading-4{font-size: 20px;}
   .news-slider .card-news{margin-bottom: 0px;border-radius: 0px;}}
@@ -2250,4 +2250,5 @@ position: absolute;
   .navbar .top-header{display: none;}
   .navbar .navbar-toggler{position: absolute;right: 15px;border: 1px solid #fff;font-size: 10px;padding: 7px;border-radius: 0px;}
   .navbar .navbar-toggler-icon{filter: invert(1) brightness(100);}
+  .tw-footer.footer-top-space{padding: 50px 0 0;}
 }
