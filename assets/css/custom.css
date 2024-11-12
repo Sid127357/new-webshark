@@ -2234,7 +2234,7 @@ position: absolute;
   .news-slider .swiper{margin-top: 50px;}
   .news-slider .card-news .card-info p{font-size: 14px;margin-bottom: 0px;}
   .heading-4{font-size: 20px;}
-  .news-slider .card-news{margin-bottom: 0px;border-radius: 0px;}}
+  .news-slider .card-news{margin-bottom: 0px;border-radius: 0px;}
   .news-slider .swiper-button-next, .news-slider .swiper-button-prev{height: 30px;width: 30px;padding: 6px;}
   .news-slider .swiper-button-next::after, .news-slider .swiper-button-prev::after{font-size: 12px;}
   .footernew-top{padding: 20px;}
@@ -2243,12 +2243,49 @@ position: absolute;
   .copyright{font-size: 10px;}
   .newflag li:last-child{margin-right: 0px;}
   .get-website-block .content-wrapper{margin-top: 40px;}
-  .cta_btn{margin-right: 50px;display: flex;}
+  .cta_btn{margin-right: 10px;display: flex;}
   .cta_btn .marquee-button{width: 100px;font-size: 10px;margin-left: 0px;height: 32px;}
   .marquee-button::after, .marquee-button::before{line-height: 32px;height: 32px;}
   .navbar-brand img{max-width: 150px;}
   .navbar .top-header{display: none;}
-  .navbar .navbar-toggler{position: absolute;right: 15px;border: 1px solid #fff;font-size: 10px;padding: 7px;border-radius: 0px;}
+  .navbar .navbar-toggler{border: 1px solid #fff;font-size: 10px;padding: 7px;border-radius: 0px;}
   .navbar .navbar-toggler-icon{filter: invert(1) brightness(100);}
   .tw-footer.footer-top-space{padding: 50px 0 0;}
+}
+
+/* Tablet View */
+@media screen and (min-width:768px) and (max-width:1024px){
+  .navbar .top-header{display: none;}
+  .navbar .navbar-toggler{border: 1px solid #fff;font-size: 30px;padding: 7px;border-radius: 0px;}
+  .navbar .navbar-toggler-icon{filter: invert(1) brightness(100);height: 1em;width: 1em;}
+  .cta_btn{margin-right: 20px;display: flex;}
+  .single-service-banner .banner-text-block h1{font-size: 60px;}
+  .single-service-banner .banner-text-block h2{font-size: 24px;}
+  .get-website-block .main-img-box{margin-right: 0px;padding: 0px;}
+  .text-block h2, .protection-block .text-box h2{font-size: 28px;line-height: 37px;}
+  .get-website-block .card-feature-2 .card-image{height: 44px;min-width: 44px;margin-right: 10px;}
+  .get-website-block .card-feature-2 .card-info h3{font-size: 16px;}
+  .get-website-block .card-feature-2 .card-info P {font-size: 14px;line-height: 18px;}
+  .get-website-block .content-wrapper .row > *{padding-left: 5px;padding-right: 5px;}
+  .text-block p{font-size: 18px;}
+  .section-title h2{font-size: 44px;}
+  .section-title p.half{max-width: 70%;}
+  .methodology-block .card-preparing {margin-bottom: 40px;}
+  .methodology-block .card-preparing .card-info p{width: 100%;font-size: 16px;}
+  .protection-block .singleCourseTesti .card .comment{font-size: 16px;}
+  .protection-block .singleCourseTesti .card p{margin-bottom: 0px;}
+  .protection-block .singleCourseTesti .card .company-logo{width: 70px;}
+  .best-technologies{padding-top: 0px;}
+  .best-technologies .technologies-grid{grid-template-columns: repeat(4, 1fr);}
+  .best-technologies .tech-card{padding: 30px;}
+  .best-technologies .tech-card h3{font-size: 18px;}
+  .best-technologies .tech-card img{max-width: 60%;}
+  .best-technologies .section-title{top: 5%;}
+  .star-img img{width: 130px;}
+  .moving-text{display: none;}
+  .single-service-banner .graphic-box img{width: 100%;}
+  .single-service-banner{padding-top: 150px;}
+
+
+
 }
